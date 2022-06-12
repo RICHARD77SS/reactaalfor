@@ -10,6 +10,11 @@ export const Button = ({
   buttonSize
 }) => {
   return (
-    <ButtonStyle buttonSize={buttonSize} onClick={onClick} type={type} >{ children }</ButtonStyle>
+    <ButtonStyle
+      buttonSize={buttonSize}
+      onClick={onClick}
+      type={type}
+    >{children}
+    </ButtonStyle>
   );
 };
