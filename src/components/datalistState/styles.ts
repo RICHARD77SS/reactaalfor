@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export const DatalistLangStyle = styled.datalist`
+export const DatalistStyle = styled.datalist`
   width: auto;
 `

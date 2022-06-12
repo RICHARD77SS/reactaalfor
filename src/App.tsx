@@ -25,7 +25,7 @@ const App = () => {
       <div className="App">
         <GlobalStyle />
         <Header toggleTheme={toggleTheme} />
-        <Navbar toggleTheme={toggleTheme} />
+        <Navbar />
         <StoreConteiner/>
       </div>
     </ThemeProvider>

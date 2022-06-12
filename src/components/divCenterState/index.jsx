@@ -2,14 +2,14 @@ import React from 'react';
 
 import { DivCenterStyle } from './style';
 import DatalistState from '../datalistState';
-import InputStateList from '../inputStateList';
+import {InputList} from '../inputList';
 import { Label } from '../label';
 
-const DivCenterState: React.FC = () => {
+const DivCenterState = () => {
   return (
     <DivCenterStyle>
       <Label>State</Label>
-      <InputStateList />
+      <InputList placeholder='State' list='state' />
       <DatalistState />
     </DivCenterStyle>
   );

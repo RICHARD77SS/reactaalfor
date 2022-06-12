@@ -18,7 +18,6 @@ const Filters: React.FC = () => {
       <DivFlexLabel />
       <DivFlexCheck />
       <DivCenterState />
-      <DivFlexLabel />
       <DivFlexRadio />
       <DivFlexButton />
     </BlockConteiner>

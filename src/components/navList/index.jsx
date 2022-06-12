@@ -7,10 +7,10 @@ const NavList = () => {
   
   return (
     <NavListStyle>
-      <Button>Home</Button>
-      <Button>Store</Button>
-      <Button>Abault</Button>
-      <Button>Contact</Button>
+      <Button buttonSize='100px'>Home</Button>
+      <Button buttonSize='100px'>Store</Button>
+      <Button buttonSize='100px'>Abault</Button>
+      <Button buttonSize='100px'>Contact</Button>
     </NavListStyle>
   );
 };
