@@ -1,20 +1,23 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import Home from '../components/home';
 import Store from '../components/store';
+import About from '../components/about';
+import Contact from '../components/contact';
 
 export default () => (
   <Switch>
     <Route exact path='/'>
-      
+      <Home />
     </Route>
     <Route exact path='/store'>
       <Store />
     </Route>
     <Route exact path='/abault'>
-      <h1>Abault</h1>
+      <About />
     </Route>
     <Route exact path='/contact'>
-      <h1>Contact</h1>
+      <Contact />
     </Route>
   </Switch>
 )

@@ -1,7 +1,8 @@
-import styled from 'styled-components';
+import Styled from 'styled-components';
 
-export const ConteinerFlexStyle = styled.div`
-  width: auto;
-  margin: 0 3%;
+export const SliderConteinerStyle = Styled.div`
+  display: flex;
+  width: 100%;
+  height: auto;
+
 `
-  ;

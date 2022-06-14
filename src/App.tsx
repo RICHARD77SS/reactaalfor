@@ -1,6 +1,8 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 
 import { ThemeProvider, DefaultTheme } from 'styled-components';
+
 import usePeristedState from './utils/usePersistedState'
 
 import light from './styles/themes/light';
@@ -10,13 +12,14 @@ import GlobalStyle from './styles/global';
 import Header from './components/Header';
 
 import Navbar from './components/Navbar'
-
-import { Route, Routes } from 'react-router-dom';
+import Home from './components/home';
 import Store from './components/store';
-
-
+import Abault from './components/abault';
+import Contact from './components/contact';
 
 import{ Footer } from './components/footer';
+
+
 
 
 const App = () => {
@@ -33,8 +36,10 @@ const App = () => {
         <Header toggleTheme={toggleTheme} />
         <Navbar />
         <Routes>
-          <Route path="/"  />
+          <Route path="/" element={<Home />}  />
           <Route path="/store" element={<Store />} />
+          <Route path="/contact" element={<Contact />}  />
+          <Route path="/zbault" element={<Abault />} />
         </Routes>
         <Footer />
       </div>

@@ -5,4 +5,4 @@ export const SideListStyle = styled.ul`
   height: auto;
   display: flex;
   justify-content: space-arrownd;
-`
+`;
