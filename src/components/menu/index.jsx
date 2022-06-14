@@ -25,7 +25,7 @@ const Menu = () => {
   return (
     <MenuIcon>
       <div className={active ? 'icon iconActive' : 'icon'} onClick={ToggleMode}>
-        <div className="icoon"></div>
+        <div className={active ? 'icoon icoonActive' : 'icoon'}></div>
       </div>
       <div className={active ? 'menu menuOpen' : 'menu menuClose'}>
         <MenuItems>

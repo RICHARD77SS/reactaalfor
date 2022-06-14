@@ -11,7 +11,7 @@ const SideList = () => {
       <Button buttonSize='100px'><FaGoogle /> Login</Button>
       <Button buttonSize='50px'>Login</Button>
       <Button buttonSize='40px'><FaShoppingCart /></Button>
-      <div className="">aa<Menu /></div>
+      <div className=""><Menu /></div>
       
       
     </SideListStyle>
