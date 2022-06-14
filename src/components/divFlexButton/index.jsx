@@ -6,8 +6,8 @@ import {Button} from '../button';
 const DivFlexButton = () => {
   return (
     <DivFlexStyle> 
-      <Button>Aplicar</Button>
-      <Button>Limpar</Button>
+      <Button buttonSize='100px'>Aplicar</Button>
+      <Button buttonSize='100px'>Limpar</Button>
     </DivFlexStyle>
   );
 };

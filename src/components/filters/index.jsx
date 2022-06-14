@@ -7,10 +7,10 @@ import DivFlexRadio from '../divFlexRadio';
 import DivFlexButton from '../divFlexButton';
 import DivCenterRange from '../divCenterRange';
 import DivFlexLabel from '../divFlexArround';
-import DivCenterFilter from '../divCenterFilter';
+import {DivCenterFilter} from '../divCenterFilter';
 import DivCenterState from '../divCenterState';
 
-const Filters: React.FC = () => {
+const Filters = () => {
   return (
     <BlockConteiner>
       <DivCenterFilter />

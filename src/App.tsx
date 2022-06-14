@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 import usePeristedState from './utils/usePersistedState'
 
@@ -10,7 +11,12 @@ import Header from './components/Header';
 
 import Navbar from './components/Navbar'
 
-import StoreConteiner from './components/storeConteiner'
+import { Route, Routes } from 'react-router-dom';
+import Store from './components/store';
+
+
+
+import{ Footer } from './components/footer';
 
 
 const App = () => {
@@ -26,7 +32,11 @@ const App = () => {
         <GlobalStyle />
         <Header toggleTheme={toggleTheme} />
         <Navbar />
-        <StoreConteiner/>
+        <Routes>
+          <Route path="/"  />
+          <Route path="/store" element={<Store />} />
+        </Routes>
+        <Footer />
       </div>
     </ThemeProvider>
   );

@@ -1,13 +1,13 @@
 import React from 'react';
 
 import { DivFlexCheckStyle } from './style';
-import InputCheck from '../inputCheckbox';
+import { Input } from '../input';
 
-const DivFlexCheck: React.FC = () => {
+const DivFlexCheck = () => {
   return (
     <DivFlexCheckStyle> 
-      <InputCheck />
-      <InputCheck />
+      <Input type='checkbox' />
+      <Input type='checkbox' />
     </DivFlexCheckStyle>
   );
 };

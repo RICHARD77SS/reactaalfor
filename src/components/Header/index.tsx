@@ -4,9 +4,7 @@ import { ThemeContext } from 'styled-components';
 import { shade } from 'polished';
 import { Container } from './styles';
 import Logo from '../Logo'
-import InputSearch from '../inputSearch'
-import InputLang from '../inputLang'
-
+import Search from '../search'
 
 interface Props {
   toggleTheme(): void;
@@ -18,8 +16,7 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <Container>
       <Logo />
-      <InputSearch />
-      <InputLang/>
+      <Search />
       <Switch
         onChange={toggleTheme}
         checked={title === 'dark'}

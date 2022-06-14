@@ -2,12 +2,15 @@ import React from 'react';
 
 import { FilterTitleStyle } from './style';
 
-const FilterTitle: React.FC = () => {
+export const Title = (
+  {
+    title,
+  }
+) => {
   return (
     <FilterTitleStyle> 
-      Filters
+      {title}
     </FilterTitleStyle>
   );
 };
 
-export default FilterTitle;

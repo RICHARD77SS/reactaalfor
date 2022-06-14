@@ -1,23 +1,23 @@
 import React from 'react';
 import { Inputs } from './styles';
 
-const Input = (
+export const Input = (
   {
     placeholder,
     type,
     inputSize,
-    inputStyle
+    inputStyle,
+    list
   }
 ) => {
   return (
     <Inputs
-      placeholder={placeholder}
+      placeholder={ placeholder}
       type={type}
       inputSize={inputSize}
       inputStyle={inputStyle}
+      list={list}
     >
       </Inputs>
   );
 };
-
-export default Input;

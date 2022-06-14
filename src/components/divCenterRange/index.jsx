@@ -1,12 +1,12 @@
 import React from 'react';
 
 import { DivCenterStyle } from './style';
-import InputRange from '../inputRange';
+import { Input } from '../input';
 
-const DivCenterRange: React.FC = () => {
+const DivCenterRange = () => {
   return (
     <DivCenterStyle>
-      <InputRange />
+      <Input type='range' />
     </DivCenterStyle>
   );
 };

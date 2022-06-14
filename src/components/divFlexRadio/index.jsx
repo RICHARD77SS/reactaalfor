@@ -1,13 +1,13 @@
 import React from 'react';
 
 import { DivFlexCheckStyle } from './style';
-import InputRadio from '../inputRadio';
+import { Input } from '../input';
 
-const DivFlexRadio: React.FC = () => {
+const DivFlexRadio = () => {
   return (
     <DivFlexCheckStyle> 
-      <InputRadio />
-      <InputRadio />
+      <Input type='radio' />
+      <Input type='radio' />
     </DivFlexCheckStyle>
   );
 };
