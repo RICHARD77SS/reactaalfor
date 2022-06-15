@@ -1,15 +1,14 @@
 import React from 'react';
 import { useState } from 'react';
 import { MenuIcon } from './styles.ts';
-import ListItem from '../listMenuItems';
-import './styles.css';
+import MenuItem from '../MenuItem';
 import styled from 'styled-components';
 
 const MenuItems = styled.div`
   width: 300px;
   height: 400px;
   border-radius: 10px;
-  background-color: #f5f5f5;
+  background-color: ${props => props.theme.colors.primary};
   transform: translateX(-90%);
   position: absolute;
 `;
@@ -29,7 +28,7 @@ const Menu = () => {
       </div>
       <div className={active ? 'menu menuOpen' : 'menu menuClose'}>
         <MenuItems>
-          <ListItem />
+          <MenuItem />
         </MenuItems>
       </div>
     </MenuIcon>
