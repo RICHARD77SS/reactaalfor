@@ -10,10 +10,10 @@ const NavList = () => {
   
   return (
     <NavListStyle>
-      <Button buttonSize='100px'><Link to='/'>Home</Link></Button>
-      <Button buttonSize='100px'><Link to='/store'>Store</Link></Button>
-      <Button buttonSize='100px'><Link to='/contact'>Contact</Link></Button>
-      <Button buttonSize='100px'><Link to='/abault'>Abault</Link></Button>
+      <Button buttonSize='100px'><Link className='link' to='/'>Home</Link></Button>
+      <Button buttonSize='100px'><Link className='link' to='/store'>Store</Link></Button>
+      <Button buttonSize='100px'><Link className='link' to='/contact'>Contact</Link></Button>
+      <Button buttonSize='100px'><Link className='link' to='/abault'>Abault</Link></Button>
     </NavListStyle>
   );
 };

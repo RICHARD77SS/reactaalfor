@@ -5,4 +5,7 @@ export const NavListStyle = styled.ul`
   height: auto;
   display: flex;
   justify-content: space-arrownd;
+  .link {
+    color: ${props => props.theme.colors.text};
+  }
 `

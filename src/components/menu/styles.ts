@@ -36,7 +36,7 @@ export const MenuIcon = styled.div`
   background: #000;
   border: 1px solid #ccc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: 1s;
+  transition: 0.1s;
 }
 .icoon::before {
   top: -13px;
@@ -66,6 +66,8 @@ export const MenuIcon = styled.div`
 .icoon.icoonActive {
   background: transparent;
   border: none;
+  box-shadow: none;
+  
 }
 .icoon.icoonActive::before {
   top: 0;
