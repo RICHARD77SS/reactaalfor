@@ -1,0 +1,41 @@
+
+{
+  "CardInfo": [
+    {
+      "id": "0",
+      "image": "./images/img1.jpg",
+      "title": "TITLE IS HERddd",
+      "price": "R$ 1,900"
+    },
+    {
+      "id": "1",
+      "title": "TITLE ISEwwwww",
+      "image": "./images/img2.jpgtttt",
+      "price": "R$ 9,00"
+    },
+    {
+      "id": "2",
+      "title": "TITLE",
+      "image": "./images/img3.jpgwwwwwww",
+      "price": "R$ r5,00"
+    },
+    {
+      "id": "3",
+      "image": "./images/img1.jpgaaaaaa",
+      "title": "TITLE IS HERE",
+      "price": "R$ 2,900"
+    },
+    {
+      "id": "4",
+      "title": "TITLE ISEgggggg",
+      "image": "./images/img2.jpg",
+      "price": "R$ 9 0,00"
+    },
+    {
+      "id": "5",
+      "title": "TITLEfffffffff",
+      "image": "./images/img3.jpg",
+      "price": "R$11 r5,00"
+    }
+  ]
+}

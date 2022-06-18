@@ -6,11 +6,14 @@ export const Button = ({
   children,
   type,
   onClick,
-  buttonStyle,
-  buttonSize
+  buttonColor,
+  buttonSize,
+  buttonBorderRadius
 }) => {
   return (
     <ButtonStyle
+      buttonBorderRadius={buttonBorderRadius}
+      buttonColor={buttonColor}
       buttonSize={buttonSize}
       onClick={onClick}
       type={type}

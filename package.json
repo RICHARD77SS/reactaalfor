@@ -26,6 +26,7 @@
     "react-scripts": "^5.0.0",
     "react-switch": "^5.0.1",
     "styled-components": "^5.3.5",
+    "swiper": "^8.2.4",
     "typescript": "~3.7.2"
   },
   "scripts": {

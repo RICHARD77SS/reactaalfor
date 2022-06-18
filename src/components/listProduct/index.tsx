@@ -1,24 +1,13 @@
 import React from 'react';
 import { FlexConteiner } from './styles'
-import Card from '../card'
+import { CardContent } from '../card'
 
 
 const listProduct: React.FC = () => {
 
   return (
     <FlexConteiner>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <CardContent />
     </FlexConteiner>
   );
 };

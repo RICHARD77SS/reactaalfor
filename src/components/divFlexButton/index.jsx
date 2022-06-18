@@ -6,8 +6,8 @@ import {Button} from '../button';
 const DivFlexButton = () => {
   return (
     <DivFlexStyle> 
-      <Button buttonSize='100px'>Aplicar</Button>
-      <Button buttonSize='100px'>Limpar</Button>
+      <Button buttonColor={props => props.theme.colors.primary} buttonBorderRadius='20px' buttonSize='100px'>Aplicar</Button>
+      <Button buttonColor={props => props.theme.colors.primary} buttonBorderRadius='20px' buttonSize='100px'>Limpar</Button>
     </DivFlexStyle>
   );
 };
