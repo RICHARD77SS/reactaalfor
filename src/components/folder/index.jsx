@@ -142,18 +142,62 @@ export default function Folder() {
 function Port1active() {
   document.getElementById('folder1-port').classList.add('folder1-port-active')
   document.getElementById('folder2-port').classList.remove('folder2-port-active')
+
+  document.getElementById('folder1-port2').classList.add('folder1-port-active')
+  document.getElementById('folder2-port2').classList.remove('folder2-port-active')
+
+  document.getElementById('folder1-port3').classList.add('folder1-port-active')
+  document.getElementById('folder2-port3').classList.remove('folder2-port-active')
+
+  document.getElementById('folder1-port4').classList.add('folder1-port-active')
+  document.getElementById('folder2-port4').classList.remove('folder2-port-active')
 }
 function Port2active() {
   document.getElementById('folder1-port').classList.remove('folder1-port-active')
   document.getElementById('folder2-port').classList.add('folder2-port-active')
   document.getElementById('folder3-port').classList.remove('folder3-port-active')
+
+  document.getElementById('folder1-port2').classList.remove('folder1-port-active')
+  document.getElementById('folder2-port2').classList.add('folder2-port-active')
+  document.getElementById('folder3-port2').classList.remove('folder3-port-active')
+
+  document.getElementById('folder1-port3').classList.remove('folder1-port-active')
+  document.getElementById('folder2-port3').classList.add('folder2-port-active')
+  document.getElementById('folder3-port3').classList.remove('folder3-port-active')
+
+  document.getElementById('folder1-port4').classList.remove('folder1-port-active')
+  document.getElementById('folder2-port4').classList.add('folder2-port-active')
+  document.getElementById('folder3-port4').classList.remove('folder3-port-active')
+
+  
 }
 function Port3active() {
   document.getElementById('folder2-port').classList.remove('folder2-port-active')
   document.getElementById('folder3-port').classList.add('folder3-port-active')
   document.getElementById('folder4-port').classList.remove('folder4-port-active')
+
+  document.getElementById('folder2-port2').classList.remove('folder2-port-active')
+  document.getElementById('folder3-port2').classList.add('folder3-port-active')
+  document.getElementById('folder4-port2').classList.remove('folder4-port-active')
+
+  document.getElementById('folder2-port3').classList.remove('folder2-port-active')
+  document.getElementById('folder3-port3').classList.add('folder3-port-active')
+  document.getElementById('folder4-port3').classList.remove('folder4-port-active')
+
+  document.getElementById('folder2-port4').classList.remove('folder2-port-active')
+  document.getElementById('folder3-port4').classList.add('folder3-port-active')
+  document.getElementById('folder4-port4').classList.remove('folder4-port-active')
 }
 function Port4active() {
   document.getElementById('folder3-port').classList.remove('folder3-port-active')
   document.getElementById('folder4-port').classList.add('folder4-port-active')
+
+  document.getElementById('folder3-port2').classList.remove('folder3-port-active')
+  document.getElementById('folder4-port2').classList.add('folder4-port-active')
+
+  document.getElementById('folder3-port3').classList.remove('folder3-port-active')
+  document.getElementById('folder4-port3').classList.add('folder4-port-active')
+
+  document.getElementById('folder3-port4').classList.remove('folder3-port-active')
+  document.getElementById('folder4-port4').classList.add('folder4-port-active')
 }

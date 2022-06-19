@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { PortsListStyle } from './style';
-import { Port } from '../port';
+import { Port1, Port2, Port3, Port4 } from '../port';
 import { Slider, Slide } from '../mainSlider';
 
 const settings = {
@@ -16,14 +16,11 @@ const settings = {
 export const PortsList = () => {
   return (
     <PortsListStyle>
-      portList
       <Slider settings={settings}>
-        slider
-        <Slide>slide<Port /></Slide>
-        <Slide><Port /></Slide>
-        <Slide><Port /></Slide>
-        <Slide><Port /></Slide>
-        <Slide><Port /></Slide>
+        <Slide><Port1 /></Slide>
+        <Slide><Port2 /></Slide>
+        <Slide><Port3 /></Slide>
+        <Slide><Port4 /></Slide>
       </Slider>
     </PortsListStyle>
   )
