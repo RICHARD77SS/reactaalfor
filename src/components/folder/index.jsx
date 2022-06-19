@@ -89,6 +89,7 @@ export default function Folder() {
             <div>
               {isActive ? 
                 <FolderStyle>
+                  {Port3active()}
                 <FolderTextDiv>
                   <Title fontSize='1rem' fontColor={color1}>Folder 3</Title>
                   <br />
@@ -113,6 +114,7 @@ export default function Folder() {
             <div>
               {isActive ?
                 <FolderStyle>
+                  {Port4active()}
                 <FolderTextDiv>
                   <Title fontSize='1rem' fontColor={color1}>Folder 4</Title>
                   <br />
@@ -144,4 +146,14 @@ function Port1active() {
 function Port2active() {
   document.getElementById('folder1-port').classList.remove('folder1-port-active')
   document.getElementById('folder2-port').classList.add('folder2-port-active')
+  document.getElementById('folder3-port').classList.remove('folder3-port-active')
+}
+function Port3active() {
+  document.getElementById('folder2-port').classList.remove('folder2-port-active')
+  document.getElementById('folder3-port').classList.add('folder3-port-active')
+  document.getElementById('folder4-port').classList.remove('folder4-port-active')
+}
+function Port4active() {
+  document.getElementById('folder3-port').classList.remove('folder3-port-active')
+  document.getElementById('folder4-port').classList.add('folder4-port-active')
 }
