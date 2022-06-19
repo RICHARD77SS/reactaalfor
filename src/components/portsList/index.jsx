@@ -16,8 +16,10 @@ const settings = {
 export const PortsList = () => {
   return (
     <PortsListStyle>
+      portList
       <Slider settings={settings}>
-        <Slide><Port /></Slide>
+        slider
+        <Slide>slide<Port /></Slide>
         <Slide><Port /></Slide>
         <Slide><Port /></Slide>
         <Slide><Port /></Slide>

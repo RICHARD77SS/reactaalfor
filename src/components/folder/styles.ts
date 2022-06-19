@@ -9,6 +9,7 @@ export const FolderStyle = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.5s;
 `
 export const FolderTextDiv = styled.div`
   width: 90%;
