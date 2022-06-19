@@ -10,6 +10,7 @@ declare module 'styled-components' {
       background: string;
       text: string;
       bordeer: string;
+      shadowSecundary: string;
       backgroundimagee: string;
     }
   };
