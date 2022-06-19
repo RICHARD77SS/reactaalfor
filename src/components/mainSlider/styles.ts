@@ -3,13 +3,14 @@ import styled from 'styled-components';
 export const MainSliderConteinerStyle = styled.div`
   width: 100%;
   height: auto;
+  border-radius: 15px;
   background: ${props => props.theme.colors.secundary};
   color: ${props => props.theme.colors.text};
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 1rem auto;
-  padding: 1rem 0;
+  padding: .5rem 0;
 `;
 
 export const MainSliderCardStyle = styled.div`

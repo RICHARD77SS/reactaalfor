@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const FolderStyle = styled.div`
     width: 250px;
     height: 300px;
-    background: ${props => props.theme.colors.background};
-    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

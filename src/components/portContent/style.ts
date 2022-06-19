@@ -12,7 +12,7 @@ export const PortContentStyle = styled.div`
   }
   .folder3-port-active {
     display: block;
-    background: #fff;
+    background: #f58fff;
   }
   .folder2-port-active {
     display: block;

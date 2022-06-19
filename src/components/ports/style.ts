@@ -4,5 +4,7 @@ export const PortsStyle = styled.div`
   width: 45%;
   height: auto;
   display: block;
-  background-color: #695055;
+  background-color: ${props => props.theme.colors.primary};
+  padding-top: 7rem;
+  margin-top: 6rem;
 `

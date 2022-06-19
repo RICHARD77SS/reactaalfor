@@ -12,9 +12,9 @@ interface Props {
 
 const Header: React.FC<Props> = ({ toggleTheme }) => {
   const { colors, title } = useContext(ThemeContext); 
-
   return (
     <Container>
+      
       <Logo />
       <Search />
       <Switch

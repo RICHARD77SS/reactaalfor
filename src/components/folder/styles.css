@@ -11,8 +11,9 @@
   background-size: cover;
   width: 250px;
   height: 300px;
+  border-radius: 20px;
   transition: all 0.5s;
-  background-image: url('https://img.freepik.com/free-vector/flat-abstract-wireframe-background_23-2149001612.jpg?t=st=1655583351~exp=1655583951~hmac=49ae9206c9b3be488e9991191af99c71f426e10cdd7c7f56059785b6665a6b54&w=826');
+  background-image: url('https://img.freepik.com/free-vector/flat-abstract-wireframe-background_23-2149014845.jpg?w=826&t=st=1655641988~exp=1655642588~hmac=2850a8e332685d37446e3f5e6d13c450a366d92e5f5c55dbb5f18ef99598d156');
 }
 
 .swiper-slide img {
