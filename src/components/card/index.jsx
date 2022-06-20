@@ -36,16 +36,11 @@ const CardInfo = [
     image: "./images/img2.jpg",
     price: "R$ 9 0,00"
   },
-  {
-    id: "5",
-    title: "TITLEfffffffff",
-    image: "./images/img3.jpg",
-    price: "R$11 r5,00"
-  }
+
 ]
 
 
-function Car({image, title, price}) {
+export function CardRender({image, title, price}) {
     return (
         <CardContainer>
             <CardImage image={image} />
@@ -61,8 +56,8 @@ export function CardContent() {
     return (
         <>
         {CardInfo.map((cardInfo) => {
-                return <Car key={cardInfo.id} price={cardInfo.price} image={cardInfo.image} title={cardInfo.title}  >
-                </Car>
+          return <CardRender key={cardInfo.id} price={cardInfo.price} image={cardInfo.image} title={cardInfo.title}  >
+                </CardRender>
             })}
         </>
     );

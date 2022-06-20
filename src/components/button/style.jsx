@@ -8,6 +8,7 @@ export const ButtonStyle = styled.button`
   color: ${props => props.theme.colors.text};
   margin: 4px;
   &:hover {
-    background: ${props => props.theme.colors.primary};
-  }
+    background: ${props => props.theme.colors.secundary};
+    color: #000;
+}
 `
