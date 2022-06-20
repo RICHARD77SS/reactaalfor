@@ -12,7 +12,7 @@ import {
 } from './styles';
 import{ MainTitle } from '../mainTitle'
 
-const Main: React.FC = () => {
+const HomeMain: React.FC = () => {
 
   return (
     <MainConteinerStyle>
@@ -55,4 +55,4 @@ const Main: React.FC = () => {
   );
 };
 
-export default Main;
+export default HomeMain;

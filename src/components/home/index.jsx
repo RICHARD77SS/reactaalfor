@@ -1,10 +1,10 @@
 import React from 'react';
 import { HomeConteinerStyle } from './styles';
-import Main from '../main';
+import HomeMain from '../main';
 import { MainSlideImage, MainSlideImage2, MainSlideImage3, MainSlideImage4, MainSlideImage5  } from '../mainSlideImage';
 import PortFolder from '../portFolders'
 import { Title } from '../title';
-import { Slider, Slide } from '../mainSlider';
+import { Slider, Slide } from '../slider';
 import { BollsContainer } from '../bollsContainer'
 
 const settings= {
@@ -20,7 +20,7 @@ const settings= {
 function Home() {
   return (
     <HomeConteinerStyle>
-      <Main />
+      <HomeMain />
       <Slider settings={settings} >
           <Slide>
             <MainSlideImage />

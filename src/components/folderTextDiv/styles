@@ -1,7 +1,0 @@
-import styled from "styled-components";
-
-export const FolderTextDivStyle = styled.div`
-  width: 90%;
-  height: auto;
-  margin: .5rem auto;
-`

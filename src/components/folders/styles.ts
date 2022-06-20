@@ -5,7 +5,7 @@ export const FoldersStyle = styled.div`
 
   height: auto;
   margin: 0 1rem;
-  background: ${props => props.theme.colors.text};
+  background: ${props => props.theme.colors.background};
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const FolderStyle = styled.div`
-    width: 250px;
+    min-width: 250px;
     height: 300px;
-    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(18px) saturate(180%);
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     display: flex;
     flex-direction: column;

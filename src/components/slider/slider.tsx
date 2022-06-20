@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainSliderConteinerStyle} from './styles';
+import { SliderConteinerStyle } from './styles';
 import { Swiper, SwiperProps } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper';
 import 'swiper/css';
@@ -15,13 +15,13 @@ interface SliderProps {
     children: ReactNode;
 }
 
-export default function Slider({ settings, children }: SliderProps) {
+export function Slider({ settings, children }: SliderProps) {
 
     return (
-        <MainSliderConteinerStyle>
+        <SliderConteinerStyle>
             <Swiper modules={[Navigation, Pagination, A11y]} {...settings}>{children}
             </Swiper>
-        </MainSliderConteinerStyle>
+        </SliderConteinerStyle>
     );
 };
 

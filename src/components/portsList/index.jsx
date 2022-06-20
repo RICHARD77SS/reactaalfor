@@ -2,7 +2,7 @@ import React from 'react';
 
 import { PortsListStyle } from './style';
 import { Port1, Port2, Port3, Port4 } from '../port';
-import { Slider, Slide } from '../mainSlider';
+import { Slider, Slide } from '../slider';
 
 const settings = {
   spaceBetween: 50,
