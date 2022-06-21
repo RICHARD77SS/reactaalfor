@@ -3,11 +3,11 @@ import React from 'react';
 import { ContactConteinerStyle } from './styles';
 
 
-const Contact: React.FC = () => {
+const Contact = () => {
   return (
     <ContactConteinerStyle>
       <h1>Contact</h1>
-
+      
     </ContactConteinerStyle>
   );
 }

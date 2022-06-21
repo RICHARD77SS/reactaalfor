@@ -1,11 +1,13 @@
 import React from 'react';
 
 import { AbaultConteinerStyle } from './styles';
+import { Title } from '../title';
 
-const Abault: React.FC = () => {
+const Abault = () => {
   return (
     <AbaultConteinerStyle>
-      <h1>Abault</h1>
+      <Title fontSize='2rem' fontColor={props => props.theme.colors.text} >Abault</Title>
+      
     </AbaultConteinerStyle>
   );
 }

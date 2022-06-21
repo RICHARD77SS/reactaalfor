@@ -5,4 +5,12 @@ export const SideListStyle = styled.ul`
   height: auto;
   display: flex;
   justify-content: space-arrownd;
+  .link {
+    width: auto;
+    padding: 5px 20px;
+    color: ${props => props.theme.colors.text};
+  }
+  .link:hover {
+    color: #000;
+  }
 `;

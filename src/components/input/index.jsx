@@ -18,6 +18,6 @@ export const Input = (
       inputStyle={inputStyle}
       list={list}
     >
-      </Inputs>
+    </Inputs>
   );
 };

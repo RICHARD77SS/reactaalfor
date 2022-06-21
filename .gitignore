@@ -18,6 +18,26 @@
 .env.test.local
 .env.production.local
 
+.firebase
+.firebaserc
+.github
+
+database.rules.json
+firebase.json
+firebase.rules.json
+firestore.rules.json
+firestore.indexes.json
+firestore.rules
+remoteconfig.template.json
+storage.rules
+googleLogin.js
+
+.gitignore
+package.json
+yarn.lock
+tsconfig.json
+
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
