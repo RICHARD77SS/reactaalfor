@@ -7,7 +7,8 @@ export const Input = (
     type,
     inputSize,
     inputStyle,
-    list
+    list,
+    disabled
   }
 ) => {
   return (
@@ -17,6 +18,7 @@ export const Input = (
       inputSize={inputSize}
       inputStyle={inputStyle}
       list={list}
+      disabled={disabled}
     >
     </Inputs>
   );

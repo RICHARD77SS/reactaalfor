@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { Button} from '../button';
 import { CardTitlee } from '../cardTitle'
 import { CardPrices } from '../cardPrice'
@@ -46,7 +47,7 @@ export function CardRender({image, title, price}) {
             <CardImage image={image} />
             <CardTitlee title={title} />
             <CardPrices price={price} />
-        <Button buttonColor='#dd8787' buttonBorderRadius='20px' buttonSize='100px' onClick=''>Buy</Button>
+        <Button buttonColor='#dd8787' buttonBorderRadius='20px' buttonSize='100px' onClick=''><Link to='/produto'>Buy</Link></Button>
         </CardContainer>
     );
 }

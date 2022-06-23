@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { useContext } from "react";
+import { AuthGoogleContext } from "../../contexts/authGoogle";
 import { HomeConteinerStyle } from './styles';
 import HomeMain from '../main';
 import { MainSlideImage, MainSlideImage2, MainSlideImage3, MainSlideImage4, MainSlideImage5  } from '../mainSlideImage';
@@ -17,9 +20,20 @@ const settings= {
 };
 
 
+
 function Home() {
+  const { user, signOut } = useContext(AuthGoogleContext);
+  let userLogado = JSON.parse(user);
+
+  if (!userLogado) {
+    userLogado = ' '
+  }
   return (
     <HomeConteinerStyle>
+      <div>
+        <h1>Bem vindo: {userLogado.displayName}</h1>
+        <button onClick={() => signOut()}>sair</button>
+      </div>
       <HomeMain />
       <Slider settings={settings} >
           <Slide>
