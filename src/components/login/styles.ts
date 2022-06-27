@@ -10,10 +10,11 @@ export const LoginContainerStyle = styled.div`
   
 `
 
-export const DivFlexStyle = styled.div`
+export const DivFlexStyles = styled.div`
   width: fit-content;
   height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   padding:0 0 1rem 0;

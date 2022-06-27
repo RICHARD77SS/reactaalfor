@@ -7,6 +7,7 @@ const MenuItem = () => {
   
   return (
     <UlMenuItemStyle >
+
       <ListItemStyle><Link className='LinkRd' to='/'>Home</Link></ListItemStyle>
       <ListItemStyle><Link className='LinkRd' to='/store'>Store</Link></ListItemStyle>
       <ListItemStyle><Link className='LinkRd' to='/contact'>Contact</Link></ListItemStyle>

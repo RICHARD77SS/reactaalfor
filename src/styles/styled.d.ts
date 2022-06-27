@@ -13,5 +13,5 @@ declare module 'styled-components' {
       shadowSecundary: string;
       backgroundimagee: string;
     }
-  };
-};
+  }
+}

@@ -9,6 +9,8 @@ import PortFolder from '../portFolders'
 import { Title } from '../title';
 import { Slider, Slide } from '../slider';
 import { BollsContainer } from '../bollsContainer'
+import { Button } from '../button'
+import { FaGoogle } from 'react-icons/fa';
 
 const settings= {
   spaceBetween: 50,
@@ -26,13 +28,13 @@ function Home() {
   let userLogado = JSON.parse(user);
 
   if (!userLogado) {
-    userLogado = ' '
+    
+    userLogado = 'Sair'
   }
   return (
     <HomeConteinerStyle>
       <div>
-        <h1>Bem vindo: {userLogado.displayName}</h1>
-        <button onClick={() => signOut()}>sair</button>
+        <Button buttonColor={props => props.theme.colors.primary} buttonBorderRadius='20px' buttonSize='auto' onClick={() => signOut()}> <FaGoogle />Sair  {userLogado.displayName}</Button>
       </div>
       <HomeMain />
       <Slider settings={settings} >
