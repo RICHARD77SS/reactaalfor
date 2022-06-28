@@ -22,3 +22,15 @@ export const MaisProdutosSlideSt = styled.div`
     border-color: ${props => props.theme.colors.bordeer};
     scroll-snap-type: mandatory;
   `
+export const MaisProdutosSlidehSt = styled.div`
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow-x: scroll;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: ${props => props.theme.colors.bordeer};
+    scroll-snap-type: mandatory;
+  `

@@ -2,7 +2,8 @@ import React from 'react';
 
 import {
   ProdutoSlideImgSt,
-  MaisProdutosSlideSt
+  MaisProdutosSlideSt,
+  MaisProdutosSlidehSt
 } from './styles';
 import { Title } from '../title';
 import { Button } from '../button';
@@ -31,10 +32,9 @@ export const Prod = () => {
 
   return (
     <div>
-      <MaisProdutosSlideSt>
+      <MaisProdutosSlidehSt>
         {produtos.map((produto) => {
           return (
-            <>
               <ProdutoSlideImgSt>
                 <img className='img2' src="https://img.terabyteshop.com.br/produto/g/placa-de-video-galax-geforce-rtx-3090-ex-gaming-pink-1-click-oc-24gb-gddr6x-384bit_104303.png" alt='{productImageAlt}' />
                 <Title>{produto.name}</Title>
@@ -45,10 +45,9 @@ export const Prod = () => {
                   onClick='{() => deleteproduto(produto.id)}'
                   type='button'>Ver Mais</Button>
               </ProdutoSlideImgSt>
-            </>
           );
         })}
-      </MaisProdutosSlideSt>
+      </MaisProdutosSlidehSt>
     </div>
   );
 };
@@ -73,13 +72,10 @@ export const ProdutosEletronicos = () => {
           return (
             <>
               <ProdutoSlideImgSt>
+                <img className='img' src={produto.image} alt='{productImageAlt}' />
                 <Title>{produto.name}</Title>
                 <Title>R$ {produto.price}</Title>
-                <Title>{produto.description}</Title>
                 <Title>{produto.avaliation}</Title>
-                <Title>{produto.inventory}</Title>
-                <Title>{produto.comments}</Title>
-                <Title>{produto.image}</Title>
                 <Button buttonBorderRadius='10px'
                   buttonColor={props => props.theme.colors.background}
                   buttonSize='80px'
