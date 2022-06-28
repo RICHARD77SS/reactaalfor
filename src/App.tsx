@@ -5,10 +5,10 @@ import { AuthGoogleProvider } from "./contexts/authGoogle";
 
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 
-import usePeristedState from './utils/usePersistedState'
+import usePeristedState from './utils/usePersistedState';
 
 import light from './styles/themes/light';
-import dark from './styles/themes/dark';   
+import dark from './styles/themes/dark';
 
 import GlobalStyle from './styles/global';
 import Header from './components/Header';
@@ -19,8 +19,9 @@ import Store from './components/store';
 import Abault from './components/abault';
 import Contact from './components/contact';
 import {LoginPage} from './components/login';
-import { ProdutoPage } from './components/produtoPage'
+import { ProdutoPage } from './components/produtoPage';
 import { Footer } from './components/footer';
+import { AreaAdmin } from './components/areAdm';
 
 
 
@@ -45,6 +46,7 @@ const App = () => {
             <Route path="/abault" element={<Abault />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/produto" element={<ProdutoPage/>}></Route>
+            <Route path="/admi" element={<AreaAdmin />}></Route>
           </Routes>
 
         </AuthGoogleProvider>

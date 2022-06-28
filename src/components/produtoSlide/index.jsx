@@ -1,42 +1,26 @@
 import React from 'react';
 
 import {
-  ProdutoSlideImgSt
+  ProdutoSlideImgSt,
+  MaisProdutosSlideSt
 } from './styles';
 import { Title } from '../title';
 import { Button } from '../button';
 import {
   getFirestore,
   collection,
-  addDoc,
-  doc,
-  deleteDoc,
-  getDocs,
+  getDocs
 } from "firebase/firestore";
 import { useEffect, useState } from "react";
 
 import { app } from '../../services/firebaseConfig';
 
 export const Prod = () => {
-  const [name, setName] = useState("");
-  const [preco, setpreco] = useState("");
   const [produtos, setprodutos] = useState([]);
 
   const db = getFirestore(app);
   const produtosCollectionRef = collection(db, "produtos");
 
-  async function criarDado() {
-    try {
-      const produto = await addDoc(collection(db, "produtos"), {
-        name,
-        preco
-      });
-
-      console.log("dados salvos com sucessos", produto);
-    } catch (e) {
-      console.error("Error adding document: ", e);
-    }
-  }
   useEffect(() => {
     const getprodutos = async () => {
       const data = await getDocs(produtosCollectionRef);
@@ -45,28 +29,9 @@ export const Prod = () => {
     getprodutos();
   }, []);
 
-  async function deleteproduto(id) {
-    const produtoDoc = doc(db, "produtos", id);
-    await deleteDoc(produtoDoc);
-  }
-
   return (
     <div>
-      <input
-        type="text"
-        placeholder="Nome"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="preço"
-        value={preco}
-        onChange={(e) => setpreco(e.target.value)}
-      />
-      <button onClick={criarDado}>Criar dado</button>
-
-      <ul>
+      <MaisProdutosSlideSt>
         {produtos.map((produto) => {
           return (
             <>
@@ -77,13 +42,13 @@ export const Prod = () => {
                 <Button buttonBorderRadius='10px'
                   buttonColor={props => props.theme.colors.background}
                   buttonSize='80px'
-                  onClick={() => deleteproduto(produto.id)}
-                  type='button'>deletar</Button>
+                  onClick='{() => deleteproduto(produto.id)}'
+                  type='button'>Ver Mais</Button>
               </ProdutoSlideImgSt>
             </>
           );
         })}
-      </ul>
+      </MaisProdutosSlideSt>
     </div>
   );
 };
