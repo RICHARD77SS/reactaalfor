@@ -1,6 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+
 import { AuthGoogleProvider } from "./contexts/authGoogle";
+
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 
 import usePeristedState from './utils/usePersistedState'
@@ -18,7 +20,7 @@ import Abault from './components/abault';
 import Contact from './components/contact';
 import {LoginPage} from './components/login';
 import { ProdutoPage } from './components/produtoPage'
-import{ Footer } from './components/footer';
+import { Footer } from './components/footer';
 
 
 

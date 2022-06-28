@@ -3,7 +3,6 @@ import React from 'react';
 import { useContext } from "react";
 import { AuthGoogleContext } from "../../contexts/authGoogle";
 import { HomeConteinerStyle } from './styles';
-import HomeMain from '../main';
 import { MainSlideImage, MainSlideImage2, MainSlideImage3, MainSlideImage4, MainSlideImage5  } from '../mainSlideImage';
 import PortFolder from '../portFolders'
 import { Title } from '../title';
@@ -36,7 +35,6 @@ function Home() {
       <div>
         <Button buttonColor={props => props.theme.colors.primary} buttonBorderRadius='20px' buttonSize='auto' onClick={() => signOut()}> <FaGoogle />Sair  {userLogado.displayName}</Button>
       </div>
-      <HomeMain />
       <Slider settings={settings} >
           <Slide>
             <MainSlideImage />
