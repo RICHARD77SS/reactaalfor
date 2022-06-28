@@ -10,8 +10,7 @@ import {
   ProdutoAddFavSt,
   ProdutoBuySt,
   RollImagesSt,
-  ProdutoSideSliderSt,
-  ProdutoSlideImgSt,
+  ProdutoSideSliderSt
 } from './styles'
 import Checkbox from '@mui/material/Checkbox';
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
@@ -21,6 +20,7 @@ import DatalistParcela from '../datalistParcelas'
 
 import { FaCreditCard } from 'react-icons/fa'
 import { GrLocation } from 'react-icons/gr'
+import { ProdutosEletronicos } from '../produtoSlide'
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 export const ProdutoContent = () => {
@@ -76,56 +76,7 @@ export const ProdutoContent = () => {
         >Add to cart</Button>
       </ProdutoBuySt>
       <ProdutoSideSliderSt>
-        <ProdutoSlideImgSt>
-          <img className='img2' src="https://www.imagensempng.com.br/wp-content/uploads/2020/11/004-5.png" alt='{productImageAlt}' />
-          <Title>Placa de video 3080 ti</Title>
-          <Title>R$ 20.000 ou 0,180973 bitcoin</Title>
-          <Button buttonBorderRadius='10px'
-            buttonColor={props => props.theme.colors.background}
-            buttonSize='80px'
-            onClick=''
-            type='button'>Ver mais</Button>
-        </ProdutoSlideImgSt>
-        <ProdutoSlideImgSt>
-          <img className='img2' src="https://img.terabyteshop.com.br/produto/g/placa-de-video-galax-geforce-rtx-3080-hof-12gb-gddr6x-lhr-dlss-38iom5md3bhx_128448.png" alt='{productImageAlt}' />
-          <Title>Placa de video 3080 ti</Title>
-          <Title>R$ 20.000 ou 0,180973 bitcoin</Title>
-          <Button buttonBorderRadius='10px'
-            buttonColor={props => props.theme.colors.background}
-            buttonSize='80px'
-            onClick=''
-            type='button'>Ver mais</Button>
-        </ProdutoSlideImgSt>
-        <ProdutoSlideImgSt>
-          <img className='img2' src="https://cdn.dooca.store/265/products/img10-1.png?v=1605022516&webp=0" alt='{productImageAlt}' />
-          <Title>Placa de video 3080 ti</Title>
-          <Title>R$ 20.000 ou 0,180973 bitcoin</Title>
-          <Button buttonBorderRadius='10px'
-            buttonColor={props => props.theme.colors.background}
-            buttonSize='80px'
-            onClick=''
-            type='button'>Ver mais</Button>
-        </ProdutoSlideImgSt>
-        <ProdutoSlideImgSt>
-          <img className='img2' src="https://img.terabyteshop.com.br/produto/g/placa-de-video-galax-geforce-rtx-3090-ex-gaming-pink-1-click-oc-24gb-gddr6x-384bit_104303.png" alt='{productImageAlt}' />
-          <Title>Placa de video 3080 ti</Title>
-          <Title>R$ 20.000 ou 0,180973 bitcoin</Title>
-          <Button buttonBorderRadius='10px'
-            buttonColor={props => props.theme.colors.background}
-            buttonSize='80px'
-            onClick=''
-            type='button'>Ver mais</Button>
-        </ProdutoSlideImgSt>
-        <ProdutoSlideImgSt>
-          <img className='img2' src="https://www.imagensempng.com.br/wp-content/uploads/2020/11/004-5.png" alt='{productImageAlt}' />
-          <Title>Placa de video 3080 ti</Title>
-          <Title>R$ 20.000 ou 0,180973 bitcoin</Title>
-          <Button buttonBorderRadius='10px'
-            buttonColor={props => props.theme.colors.background}
-            buttonSize='80px'
-            onClick=''
-            type='button'>Ver mais</Button>
-        </ProdutoSlideImgSt>
+        <ProdutosEletronicos />
       </ProdutoSideSliderSt>
     </ProdutoContentSt>
   )

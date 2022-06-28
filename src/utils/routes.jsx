@@ -19,5 +19,8 @@ export default () => (
     <Route exact path='/contact'>
       <Contact />
     </Route>
+    <Route exact path='/admi'>
+      <Contact />
+    </Route>
   </Switch>
 )

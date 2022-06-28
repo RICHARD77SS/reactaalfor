@@ -11,7 +11,6 @@ declare module 'styled-components' {
       text: string;
       bordeer: string;
       shadowSecundary: string;
-      backgroundimagee: string;
     }
   }
 }

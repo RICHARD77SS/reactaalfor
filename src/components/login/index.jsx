@@ -8,7 +8,6 @@ import { FaGoogle } from 'react-icons/fa';
 import { useContext } from "react";
 import { Navigate } from "react-router-dom";
 import { AuthGoogleContext } from "../../contexts/authGoogle";
-import { ACadastroProduto } from '../aCadastroProdutos';
 
 export const Login = () => {
   const { signInGoogle, signed } = useContext(AuthGoogleContext);
@@ -27,7 +26,6 @@ export const LoginPage = () => {
   return (
     <DivFlexStyles>
       <Login />
-      <ACadastroProduto />
     </DivFlexStyles>
   );
 };

@@ -6,6 +6,7 @@ import {
 } from './styles';
 import { Title } from '../title';
 import { Button } from '../button';
+import { Input } from '../input';
 import {
   getFirestore,
   collection,
@@ -24,6 +25,8 @@ export const ACadastroProduto = () => {
   const [description, setdescription] = useState("");
   const [avaliation, setavaliation] = useState("");
   const [inventory, setinventory] = useState("");
+  const [comments, setcomments] = useState("");
+  const [image, setimage] = useState("");
   const [eletronicproducts, seteletronicproducts] = useState([]);
 
   const db = getFirestore(app);
@@ -36,7 +39,9 @@ export const ACadastroProduto = () => {
         price,
         description,
         avaliation,
-        inventory
+        inventory,
+        comments,
+        image
       });
 
       console.log("dados salvos com sucessos", produto);
@@ -91,7 +96,20 @@ export const ACadastroProduto = () => {
         value={inventory}
         onChange={(e) => setinventory(e.target.value)}
       />
-      <button onClick={criarDado}>Criar dado</button>
+      <input
+        type="text"
+        placeholder=" Comentarios"
+        value={comments}
+        onChange={(e) => setcomments(e.target.value)}
+      />
+      <input
+        type="text"
+        placeholder=" image"
+        value={image}
+        onChange={(e) => setimage(e.target.value)}
+      />
+      <Button buttonColor={props => props.theme.colors.primary} buttonBorderRadius='20px' buttonSize='100px'
+        onClick={criarDado}> Criar dado</Button>
 
       <MaisProdutosSlideSt>
         {eletronicproducts.map((produto) => {
@@ -99,10 +117,12 @@ export const ACadastroProduto = () => {
             <>
               <ProdutoSlideImgSt>
                 <Title>{produto.name}</Title>
-                <Title>{produto.price}</Title>
+                <Title>R$ {produto.price}</Title>
                 <Title>{produto.description}</Title>
                 <Title>{produto.avaliation}</Title>
                 <Title>{produto.inventory}</Title>
+                <Title>{produto.comments}</Title>
+                <Title>{produto.image}</Title>
                 <Button buttonBorderRadius='10px'
                   buttonColor={props => props.theme.colors.background}
                   buttonSize='80px'

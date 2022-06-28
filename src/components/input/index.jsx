@@ -16,7 +16,6 @@ export const Input = (
       placeholder={ placeholder}
       type={type}
       inputSize={inputSize}
-      inputStyle={inputStyle}
       list={list}
       disabled={disabled}
     >

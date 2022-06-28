@@ -25,9 +25,9 @@
     "jsx": "react"
   },
   "include": [
-    "public/src"
+    "src"
   ],
   "files": [
-    "public/src/styles/styled.d.ts"
+    "src/styles/styled.d.ts"
   ]
 }
