@@ -6,7 +6,6 @@ export const Input = (
     placeholder,
     type,
     inputSize,
-    inputStyle,
     list,
     disabled
   }

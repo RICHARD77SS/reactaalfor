@@ -1,9 +1,18 @@
 import styled from 'styled-components';
 
 export const ProdutoSlideImgSt = styled.div`
-  min-width: 249px;
-  max-width: 249px;
-  height: 250px;
+  min-width: 18%;
+  max-width: 18%;
+  height: 18%;
+  display: block;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: ${props => props.theme.colors.bordeer};
+`
+export const ProdutoSlideImgbSt = styled.div`
+  min-width: 95%;
+  max-width: 95%;
+  height: 240px;
   display: block;
   border: 1px solid;
   border-radius: 10px;

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Title } from '../title'
-import { Button } from '../button'
-import { Input } from '../input'
+import { Title } from '../title';
+import { Button } from '../button';
+import { Input } from '../input';
 import {
   ProdutoContentSt,
   ProdutoRollImgSt,
@@ -11,16 +11,16 @@ import {
   ProdutoBuySt,
   RollImagesSt,
   ProdutoSideSliderSt
-} from './styles'
+} from './styles';
 import Checkbox from '@mui/material/Checkbox';
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import Favorite from '@mui/icons-material/Favorite';
 
-import DatalistParcela from '../datalistParcelas'
+import DatalistParcela from '../datalistParcelas';
 
-import { FaCreditCard } from 'react-icons/fa'
-import { GrLocation } from 'react-icons/gr'
-import { ProdutosEletronicos } from '../produtoSlide'
+import { FaCreditCard } from 'react-icons/fa';
+import { GrLocation } from 'react-icons/gr';
+import { ProdutosEletronicos } from '../produtoSlide';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 export const ProdutoContent = () => {

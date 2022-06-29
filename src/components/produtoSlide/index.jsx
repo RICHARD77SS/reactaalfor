@@ -2,6 +2,7 @@ import React from 'react';
 
 import {
   ProdutoSlideImgSt,
+  ProdutoSlideImgbSt,
   MaisProdutosSlideSt,
   MaisProdutosSlidehSt
 } from './styles';
@@ -35,8 +36,10 @@ export const Prod = () => {
       <MaisProdutosSlidehSt>
         {produtos.map((produto) => {
           return (
+            <>
               <ProdutoSlideImgSt>
                 <img className='img2' src="https://img.terabyteshop.com.br/produto/g/placa-de-video-galax-geforce-rtx-3090-ex-gaming-pink-1-click-oc-24gb-gddr6x-384bit_104303.png" alt='{productImageAlt}' />
+              </ProdutoSlideImgSt>
                 <Title>{produto.name}</Title>
                 <Title>{produto.preco}</Title>
                 <Button buttonBorderRadius='10px'
@@ -44,7 +47,7 @@ export const Prod = () => {
                   buttonSize='80px'
                   onClick='{() => deleteproduto(produto.id)}'
                   type='button'>Ver Mais</Button>
-              </ProdutoSlideImgSt>
+            </>
           );
         })}
       </MaisProdutosSlidehSt>
@@ -71,8 +74,9 @@ export const ProdutosEletronicos = () => {
         {eletronicproducts.map((produto) => {
           return (
             <>
-              <ProdutoSlideImgSt>
+              <ProdutoSlideImgbSt>
                 <img className='img' src={produto.image} alt='{productImageAlt}' />
+              </ProdutoSlideImgbSt>
                 <Title>{produto.name}</Title>
                 <Title>R$ {produto.price}</Title>
                 <Title>{produto.avaliation}</Title>
@@ -81,7 +85,6 @@ export const ProdutosEletronicos = () => {
                   buttonSize='80px'
                   onClick='{() => deleteproduto(produto.id)}'
                   type='button'>Ver Mais</Button>
-              </ProdutoSlideImgSt>
             </>
           );
         })}

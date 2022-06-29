@@ -2,11 +2,15 @@ import React from 'react';
 
 import {
   ProdutoSlideImgSt,
-  MaisProdutosSlideSt
+  MaisProdutosSlideSt,
+  CadProdutosSlideSt,
+  ProdutoSlideImgConteinerSt,
+  PCardAjustFlexSt,
+  PCardAjustTxtSt
 } from './styles';
 import { Title } from '../title';
 import { Button } from '../button';
-import { Input } from '../input';
+import Rating from '@mui/material/Rating';
 import {
   getFirestore,
   collection,
@@ -65,7 +69,7 @@ export const ACadastroProduto = () => {
   }
 
   return (
-    <div>
+    <CadProdutosSlideSt>
       <input
         type="text"
         placeholder=" Nome do produto"
@@ -116,23 +120,38 @@ export const ACadastroProduto = () => {
           return (
             <>
               <ProdutoSlideImgSt>
-                <Title>{produto.name}</Title>
-                <Title>R$ {produto.price}</Title>
-                <Title>{produto.description}</Title>
-                <Title>{produto.avaliation}</Title>
-                <Title>{produto.inventory}</Title>
-                <Title>{produto.comments}</Title>
-                <Title>{produto.image}</Title>
+                <PCardAjustFlexSt>
+                  <ProdutoSlideImgConteinerSt>
+                    <img className='imgc' src={produto.image} alt="" />
+                  </ProdutoSlideImgConteinerSt>
+                  <PCardAjustTxtSt>
+                    <Title>{produto.name}</Title>
+                    <Title>R$ {produto.price}</Title>
+                    <Button buttonBorderRadius='8px'
+                      buttonColor={props => props.theme.colors.background}
+                      buttonSize='fit-content'
+                      onClick={() => deleteproduto(produto.id)}
+                      type='button'>Buy</Button>
+                    <Title fontSize='.6rem' >Estoque: {produto.inventory}</Title>
+                  </PCardAjustTxtSt>
+                </PCardAjustFlexSt>
+                <Rating name="read-only" value={produto.avaliation} readOnly />
+                <Title fontSize='.8rem'>{produto.description}</Title>
+                <details>
+                  <summary>Comments</summary>
+                  <Title fontSize='.6rem'>{produto.comments}</Title>
+
+                </details>
                 <Button buttonBorderRadius='10px'
                   buttonColor={props => props.theme.colors.background}
                   buttonSize='80px'
                   onClick={() => deleteproduto(produto.id)}
-                  type='button'>deletar</Button>
+                  type='button'>Deletar</Button>
               </ProdutoSlideImgSt>
             </>
           );
         })}
       </MaisProdutosSlideSt>
-    </div>
+    </CadProdutosSlideSt>
   );
 };

@@ -9,6 +9,7 @@ export const AreaAdmin = () => {
     <PageAdmSt>
       <PageAdmNav>
         <ACadastroProduto />
+        {console.log(ACadastroProduto)}
       </PageAdmNav>
     </PageAdmSt>
   )
