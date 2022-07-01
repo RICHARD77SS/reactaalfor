@@ -1,12 +1,12 @@
 import Styled from 'styled-components';
 
-export const AbaultConteinerStyle = Styled.div`
+export const AbContSt = Styled.div`
     display: block;
     width: 100%;
     height: auto;
     padding: 1rem 0;
 `
-export const AbaultContentStyle = Styled.div`
+export const AbInfoSt = Styled.div`
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -14,13 +14,7 @@ export const AbaultContentStyle = Styled.div`
     padding: 1rem 0;
     margin: 0 auto;
 `
-export const DevImageConteinerStyle = Styled.div`
-    display: block;
-    width: 300px;
-    height: 400px;
-    margin: 0 1rem;
-`
-export const DevDescriptionConteinerStyle = Styled.div`
+export const AbDescSt = Styled.div`
     display: block;
     width: 50%;
     height: auto;
@@ -28,7 +22,7 @@ export const DevDescriptionConteinerStyle = Styled.div`
     text-align: center;
 `
 
-export const TextAbaultMeConteiner = Styled.div`
+export const AbTextSt = Styled.div`
     display: block;
     font-size: 1rem;
     width: 100%;
@@ -36,7 +30,7 @@ export const TextAbaultMeConteiner = Styled.div`
     margin: 0 auto;
     text-align: center;
 `
-export const TextHabilidadesConteiner = Styled.div`
+export const AbHabiliSt = Styled.div`
     display: block;
     width: 50%;
     height: auto;

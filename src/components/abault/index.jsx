@@ -1,20 +1,23 @@
 import React from 'react';
-
-import { AbaultConteinerStyle, AbaultContentStyle, DevImageConteinerStyle, DevDescriptionConteinerStyle, TextAbaultMeConteiner, TextHabilidadesConteiner } from './styles';
+import { ImageConteiner } from '../imageConteiner-ic'
+import { AbContSt, AbInfoSt, AbDescSt, AbTextSt, AbHabiliSt } from './styles';
 import { Title } from '../title';
 
 const Abault = () => {
   return (
-    <AbaultConteinerStyle>
+    <AbContSt>
       <Title fontSize='2rem' fontColor={props => props.theme.colors.text} >Abault</Title>
-      <>
-        <AbaultContentStyle>
-          <DevImageConteinerStyle>
-            <img src="https://www.linkpicture.com/q/meuAvatar.png" alt="" />
-          </DevImageConteinerStyle>
-          <DevDescriptionConteinerStyle>
+      <AbInfoSt>
+          <ImageConteiner
+            icWidth='300px'
+            icHeight='auto'
+            icBorderRad='5px'
+            icImage='https://www.linkpicture.com/q/meuAvatar.png'>
+
+          </ImageConteiner>
+          <AbDescSt>
             <Title fontSize='2rem'>Abault me!!!</Title>
-            <TextAbaultMeConteiner>
+            <AbTextSt>
               Me chamo Richard, tenho 22 anos.<br/>
               Eu conheci programação no ano de 2020, dois meses após o anuncio da pandemia no brasil.<br/>
               No inicio eu possuia apenas uma televisao e um celular, ambos com acesso a internet, eu praticava HTML e CSS pelo celular com paginas simples<br />
@@ -26,15 +29,14 @@ const Abault = () => {
               entao a partir desse dia e comecei a praticar os conceitos que aprendi,<br />
               e com eles fui aprendendo novos conceitos...<br />
               <br />
-            </TextAbaultMeConteiner>
+            </AbTextSt>
             <Title>Habilidades</Title>
-            <TextHabilidadesConteiner>
+            <AbHabiliSt>
 
-            </TextHabilidadesConteiner>
-          </DevDescriptionConteinerStyle>
-        </AbaultContentStyle>
-      </>
-    </AbaultConteinerStyle>
+            </AbHabiliSt>
+          </AbDescSt>
+      </AbInfoSt>
+    </AbContSt>
   );
 }
 

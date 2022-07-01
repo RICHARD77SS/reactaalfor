@@ -3,8 +3,8 @@ export default {
 
   colors: {
     primary: '#f4f4f4',
-    secundary: '#D63AF9',
-    shadowSecundary: '#D63AF9',
+    secundary: 'rgba(255,0,0,0.5)',
+    shadowSecundary: 'rgba(255,0,0,0.3)',
     background: '#ccc',
     text: '#000',
     bordeer: '#999',
