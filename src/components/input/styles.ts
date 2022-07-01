@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const Inputs = styled.input`
+interface Props {
+  inputSize: string;
+}
+
+export const Inputs = styled.input<Props>`
   width: ${props => props.inputSize};
   height: 30px;
   border-radius: 5px;

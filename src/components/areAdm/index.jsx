@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { PageAdmSt, PageAdmNav } from './styles'
-import { ACadastroProduto } from '../aCadastroProdutos';
+import { ACadastroProduto } from '../cadastroDeProdutos';
 
 export const AreaAdmin = () => {
 
@@ -9,7 +9,6 @@ export const AreaAdmin = () => {
     <PageAdmSt>
       <PageAdmNav>
         <ACadastroProduto />
-        {console.log(ACadastroProduto)}
       </PageAdmNav>
     </PageAdmSt>
   )

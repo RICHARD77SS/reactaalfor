@@ -4,7 +4,7 @@ import { FooterStyle } from './styles';
 import { Redes } from '../redes';
 import FooterList from '../footerList';
 import { FooterDivStyle } from './styles';
-import Logo from '../Logo';
+import Logo from '../logo';
 
 export const Footer = () => {
   return (

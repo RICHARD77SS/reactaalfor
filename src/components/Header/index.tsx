@@ -3,8 +3,8 @@ import Switch from 'react-switch';
 import { ThemeContext } from 'styled-components';
 import { shade } from 'polished';
 import { Container } from './styles';
-import Logo from '../Logo'
-import Search from '../search'
+import Logo from '../logo'
+import { Search } from '../search'
 
 interface Props {
   toggleTheme(): void;
