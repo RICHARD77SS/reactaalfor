@@ -5,6 +5,9 @@ export const NavListStyle = styled.ul`
   height: auto;
   display: flex;
   justify-content: space-arrownd;
+  @media (max-width: 768px){
+    display: none;
+  }
   .link {
     width: 100%;
     padding: 5px 26px;

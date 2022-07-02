@@ -1,12 +1,15 @@
 import React from 'react';
-import { LogoM } from './styles';
+import { LogoM, LogoP } from './styles';
 
 const Logo: React.FC = () => {
 
   return (
-    <LogoM>
-      AallForTudoTrue
-    </LogoM>
+    <>
+      <LogoM>
+        AallForTudoTrue
+      </LogoM>
+      <LogoP>aAFTT</LogoP>
+    </>
   );
 };
 

@@ -11,6 +11,7 @@ const MenuItems = styled.div`
   background-color: ${props => props.theme.colors.primary};
   transform: translateX(-90%);
   position: absolute;
+  z-index: 999;
 `;
 
 

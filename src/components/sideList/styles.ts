@@ -13,4 +13,7 @@ export const SideListStyle = styled.ul`
   .link:hover {
     color: #000;
   }
+  @media (max-width: 768px){
+    margin-left: 55%;
+  }
 `;

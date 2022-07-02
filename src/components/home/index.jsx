@@ -25,9 +25,7 @@ const settings= {
 function Home() {
   const { user, signOut } = useContext(AuthGoogleContext);
   let userLogado = JSON.parse(user);
-
   if (!userLogado) {
-    
     userLogado = 'Sair'
   }
   return (

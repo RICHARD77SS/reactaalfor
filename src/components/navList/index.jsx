@@ -6,7 +6,7 @@ import { Button } from '../button';
 
 
 
-const NavList = () => {
+export const NavList = () => {
   
   return (
     <NavListStyle>
@@ -17,6 +17,4 @@ const NavList = () => {
       <Button buttonColor={props => props.theme.colors.primary} buttonBorderRadius='20px' buttonSize='100px'><Link className='link' to='/admi'>Adm</Link></Button>
     </NavListStyle>
   );
-};
-
-export default NavList;
+}; 

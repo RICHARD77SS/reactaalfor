@@ -12,6 +12,7 @@ const MenuItem = () => {
       <ListItemStyle><Link className='LinkRd' to='/store'>Store</Link></ListItemStyle>
       <ListItemStyle><Link className='LinkRd' to='/contact'>Contact</Link></ListItemStyle>
       <ListItemStyle><Link className='LinkRd' to='/abault'>Abault</Link></ListItemStyle>
+      <ListItemStyle><Link className='LinkRd' to='/admi'>Adm</Link></ListItemStyle>
     </UlMenuItemStyle>
   );
 };

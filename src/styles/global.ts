@@ -9,6 +9,7 @@ export default createGlobalStyle`
   }
 
   body {
+    max-width: 100%;
     background: ${props => props.theme.colors.background};
     font-size: 14px;
     color: ${props => props.theme.colors.text};
