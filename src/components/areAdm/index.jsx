@@ -8,7 +8,15 @@ export const AreaAdmin = () => {
   return (
     <PageAdmSt>
       <PageAdmNav>
-        <ACadastroProduto />
+        <div className="CadRemoveProd-St">
+          <ACadastroProduto />
+        </div>
+        <div className="DadosPaginas-St">
+          
+        </div>
+        <div className="DadosPaginas-St">
+
+        </div>
       </PageAdmNav>
     </PageAdmSt>
   )

@@ -12,6 +12,7 @@ export const BollsList: React.FC = () => {
         <Bolls />
         <Bolls />
         <Bolls />
+        <Bolls />
       </BollsListStyle>
   )
 }

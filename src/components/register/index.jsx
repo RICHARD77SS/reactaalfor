@@ -15,12 +15,12 @@ export const RegisterPage = () => {
           <Input id="password" type="password" placeholder=" Password" inputSize="250px" />
       </LoginContainerStyle>
       <DivFlexStyle> 
-        <Button  buttonColor={props => props.theme.colors.primary} buttonBorderRadius='20px' buttonSize='100px'>
+        <Button  size='100px'>
           <Link className='link' to='/abault'>
             Entrar
           </Link>
         </Button>
-        <Button type="submit" buttonColor={props => props.theme.colors.primary} buttonBorderRadius='20px' buttonSize='100px'>
+        <Button type="submit" size='100px'>
             Registrar
         </Button>
       </DivFlexStyle>

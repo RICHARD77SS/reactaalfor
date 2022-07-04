@@ -1,8 +1,8 @@
 import React from 'react';
 
 import {
-  ProdutoSlideImgSt,
-  MaisProdutosSlideSt,
+  ProdContentSt,
+  ProdListSt,
   CadProdutosSlideSt,
   ProdutoSlideImgConteinerSt,
   PCardAjustFlexSt,
@@ -20,7 +20,7 @@ import {
   getDocs,
 } from "firebase/firestore";
 import { useEffect, useState } from "react";
-
+import { Navigate } from 'react-router-dom'
 import { app } from '../../services/firebaseConfig';
 
 export const ACadastroProduto = () => {
@@ -47,7 +47,7 @@ export const ACadastroProduto = () => {
         comments,
         image
       });
-
+      window.location.reload(true)
       console.log("dados salvos com sucessos", produto);
     } catch (e) {
       console.error("Error adding document: ", e);
@@ -66,6 +66,7 @@ export const ACadastroProduto = () => {
   async function deleteproduto(id) {
     const produtoDoc = doc(db, "eletronicproducts", id);
     await deleteDoc(produtoDoc);
+    window.location.reload(true)
   }
 
   return (
@@ -112,14 +113,14 @@ export const ACadastroProduto = () => {
         value={image}
         onChange={(e) => setimage(e.target.value)}
       />
-      <Button buttonColor={props => props.theme.colors.primary} buttonBorderRadius='20px' buttonSize='100px'
-        onClick={criarDado}> Criar dado</Button>
+      <Button
+        size='100px'
+        onClick={criarDado}><Navigate to='/admi' /> Criar dado</Button>
 
-      <MaisProdutosSlideSt>
+      <ProdListSt>
         {eletronicproducts.map((produto) => {
           return (
-            <>
-              <ProdutoSlideImgSt>
+              <ProdContentSt>
                 <PCardAjustFlexSt>
                   <ProdutoSlideImgConteinerSt>
                     <img className='imgc' src={produto.image} alt="" />
@@ -127,31 +128,27 @@ export const ACadastroProduto = () => {
                   <PCardAjustTxtSt>
                     <Title>{produto.name}</Title>
                     <Title>R$ {produto.price}</Title>
-                    <Button buttonBorderRadius='8px'
-                      buttonColor={props => props.theme.colors.background}
-                      buttonSize='fit-content'
+                    <Button
+                      size='fit-content'
                       onClick={() => deleteproduto(produto.id)}
                       type='button'>Buy</Button>
                     <Title fontSize='.6rem' >Estoque: {produto.inventory}</Title>
                   </PCardAjustTxtSt>
                 </PCardAjustFlexSt>
-                <Rating name="read-only" value={produto.avaliation} readOnly />
                 <Title fontSize='.8rem'>{produto.description}</Title>
                 <details>
                   <summary>Comments</summary>
                   <Title fontSize='.6rem'>{produto.comments}</Title>
-
                 </details>
-                <Button buttonBorderRadius='10px'
-                  buttonColor={props => props.theme.colors.background}
-                  buttonSize='80px'
+                <Rating size='small' name="read-only" value={produto.avaliation} readOnly />
+                <Button
+                  size='80px'
                   onClick={() => deleteproduto(produto.id)}
-                  type='button'>Deletar</Button>
-              </ProdutoSlideImgSt>
-            </>
+                type='button'><Navigate to='/admi' />Deletar</Button>
+              </ProdContentSt>
           );
         })}
-      </MaisProdutosSlideSt>
+      </ProdListSt>
     </CadProdutosSlideSt>
   );
 };

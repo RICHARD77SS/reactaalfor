@@ -63,14 +63,10 @@ export const ProdutoContent = () => {
         </Title>
         <Input placeholder=' Quantidade' type='list' inputSize='100px' inputStyle='' list='parcelas' />
         <DatalistParcela />
-        <Button buttonBorderRadius='10px'
-          buttonColor={props => props.theme.colors.background}
-          buttonSize='100px'
+        <Button size='100px'
           onClick=''
           type='button'>Buy</Button>
-        <Button buttonBorderRadius='10px'
-          buttonColor={props => props.theme.colors.background}
-          buttonSize='100px'
+        <Button size='100px'
           onClick=''
           type='button'
         >Add to cart</Button>

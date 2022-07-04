@@ -56,9 +56,7 @@
        <FolderStyle>
          <Button
                    type='button'
-                   buttonColor={props => props.theme.colors.primary}
-                   buttonBorderRadius='20px'
-                   buttonSize='80px' onClick=''>More Infos</Button>
+                   size='80px' onClick=''>More Infos</Button>
        </FolderStyle>
 
      </SwiperSlide>

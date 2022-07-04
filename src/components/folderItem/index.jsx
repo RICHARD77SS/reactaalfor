@@ -21,9 +21,7 @@ export const FolderItem1 = () => {
       </FolderTextDiv>
       <Button
         type='button'
-        buttonColor={props => props.theme.colors.primary}
-        buttonBorderRadius='20px'
-        buttonSize='80px'>More Infos
+        size='80px'>More Infos
       </Button>
     </FolderItemStyle>
   )
@@ -42,9 +40,7 @@ export const FolderItem2 = () => {
 
       <Button
         type='button'
-        buttonColor={props => props.theme.colors.primary}
-        buttonBorderRadius='20px'
-        buttonSize='80px'>More Infos
+        size='80px'>More Infos
       </Button>
     </FolderItemStyle>
   )
@@ -63,9 +59,7 @@ export const FolderItem3 = () => {
       </FolderTextDiv>
       <Button
         type='button'
-        buttonColor={props => props.theme.colors.primary}
-        buttonBorderRadius='20px'
-        buttonSize='80px'>More Infos
+        size='80px'>More Infos
       </Button>
     </FolderItemStyle>
   )
@@ -83,9 +77,7 @@ export const FolderItem4 = () => {
       </FolderTextDiv>
       <Button
         type='button'
-        buttonColor={props => props.theme.colors.primary}
-        buttonBorderRadius='20px'
-        buttonSize='80px'>More Infos
+        size='80px'>More Infos
       </Button>
     </FolderItemStyle>
   )

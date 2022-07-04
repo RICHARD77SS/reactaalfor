@@ -2,14 +2,17 @@ import styled from 'styled-components';
 
 interface ButtonProps {
   disabled?: boolean;
-  size?: string;
+  width?: string;
+  height?: string;
   border?: string;
+  radius?: string;
 };
 
 export const ButtonStyle = styled.button<ButtonProps>`
-  width: ${props => props.size};
-  height: 30px;
-  border-radius: ${props => props.border};
+  width: ${props => props.width};
+  height: ${props => props.height};
+  border-radius: ${props => props.radius};
+  border: ${props => props.border}; 
   background: ${props => props.theme.colors.primary};
   color: ${props => props.theme.colors.text};
   margin: 4px;

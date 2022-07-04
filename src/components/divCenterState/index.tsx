@@ -5,11 +5,11 @@ import DatalistState from '../datalistState';
 import { Input } from '../input';
 import { Label } from '../label';
 
-const DivCenterState = () => {
+const DivCenterState: React.FC = () => {
   return (
     <DivCenterStyle>
-      <Label>State</Label>
-      <Input placeholder=' State' list='state' />
+      <Label className='label'>State</Label>
+      <Input type='list' inputSize='100px' placeholder=' State' list='state' />
       <DatalistState />
     </DivCenterStyle>
   );

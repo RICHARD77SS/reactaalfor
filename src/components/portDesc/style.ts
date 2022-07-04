@@ -4,5 +4,5 @@ export const PortStyle = styled.div`
   width: auto;
   height: auto;
   display: block;
-  text-align: right;
+  text-align: center;
 `

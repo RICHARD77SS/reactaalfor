@@ -114,9 +114,7 @@ export const ProdutoDescription = () => {
         </details>
         <PerguntasSt>
           <div className="flex">
-            <Input placeholder=' Perguntar' type='text' inputSize='200px' inputStyle='' /><Button buttonBorderRadius='10px'
-              buttonColor={props => props.theme.colors.background}
-              buttonSize='100px'
+            <Input placeholder=' Perguntar' type='text' inputSize='200px' inputStyle='' /><Button size='100px'
               onClick=' '
               type='button'>Perguntar</Button>
 
@@ -136,9 +134,7 @@ export const ProdutoDescription = () => {
             </details>
 
           </PerguntasRespostasSt>
-          <Button buttonBorderRadius='10px'
-            buttonColor={props => props.theme.colors.background}
-            buttonSize='200px'
+          <Button size='200px'
             onClick=' '
             type='button'><AiOutlineDown />
           </Button>

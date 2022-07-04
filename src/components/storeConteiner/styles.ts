@@ -17,4 +17,7 @@ export const ListsProductsStyle = styled.div`
   align-items: center;
   justify-content: center;
   background-color: ${props => props.theme.colors.background};
+  @media (max-width: 768px) {
+    width: 70%;
+  }
 ` 

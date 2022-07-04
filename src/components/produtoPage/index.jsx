@@ -13,7 +13,7 @@ import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 import { ProdutoDescription } from '../produtoDescription'
-import {Prod} from '../produtoSlide'
+import { PlacasDeVideo } from '../produtoSlide'
 
 export function BasicRating() {
   const [value, setValue] = React.useState(4)
@@ -50,7 +50,7 @@ export const ProdutoPage = () => {
       <MaisProdutosSt>
         <Title fontSize="1.5rem" fontColor={props => props.theme.colors.text}>Mais produtos</Title>
         <MaisProdutosSlideSt>
-          <Prod />
+          <PlacasDeVideo />
         </MaisProdutosSlideSt>
         <Title fontSize="1.5rem" fontColor={props => props.theme.colors.text}>Mais produtos</Title>
         <MaisProdutosSlideSt>

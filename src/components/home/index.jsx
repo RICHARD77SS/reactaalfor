@@ -4,8 +4,7 @@ import { useContext } from "react";
 import { AuthGoogleContext } from "../../contexts/authGoogle";
 import { HomeConteinerStyle } from './styles';
 import { MainSlideImage, MainSlideImage2, MainSlideImage3, MainSlideImage4, MainSlideImage5  } from '../mainSlideImage';
-import PortFolder from '../portFolders'
-import { Title } from '../title';
+import PortFolder from '../portFolders';
 import { Slider, Slide } from '../slider';
 import { BollsContainer } from '../bollsContainer'
 import { Button } from '../button'
@@ -31,7 +30,7 @@ function Home() {
   return (
     <HomeConteinerStyle>
       <div>
-        <Button buttonColor={props => props.theme.colors.primary} buttonBorderRadius='20px' buttonSize='auto' onClick={() => signOut()}> <FaGoogle />Sair  {userLogado.displayName}</Button>
+        <Button size='auto' onClick={() => signOut()}> <FaGoogle />Sair  {userLogado.displayName}</Button>
       </div>
       <Slider settings={settings} >
           <Slide>
@@ -50,7 +49,6 @@ function Home() {
             <MainSlideImage5 />
           </Slide>
       </Slider>
-      <Title fontSize="2rem" fontColor={props => props.theme.colors.text}>PortFolders</Title>
       <PortFolder />
       <div className="home">
         <BollsContainer />

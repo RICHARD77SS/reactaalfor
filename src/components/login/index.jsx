@@ -15,7 +15,7 @@ export const Login = () => {
     await signInGoogle();
   }
   if (!signed) {
-    return <Button buttonColor={props => props.theme.colors.primary} buttonBorderRadius='20px' buttonSize='100px' onClick={handleLoginFromGoogle}><FaGoogle size='12' />Logar</Button>;
+    return <Button size='100px' onClick={handleLoginFromGoogle}><FaGoogle size='12' />Logar</Button>;
   } else {
     return <Navigate to="/" />;
   }

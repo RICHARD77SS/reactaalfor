@@ -47,7 +47,7 @@ export function CardRender({image, title, price}) {
             <CardImage image={image} />
             <CardTitlee title={title} />
             <CardPrices price={price} />
-        <Button buttonColor='#dd8787' buttonBorderRadius='20px' buttonSize='100px' onClick=''><Link to='/produto'>Buy</Link></Button>
+        <Button size='100px' onClick=''><Link to='/produto'>Buy</Link></Button>
         </CardContainer>
     );
 }

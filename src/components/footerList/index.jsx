@@ -10,10 +10,10 @@ const FooterList = () => {
   
   return (
     <FooterListStyle>
-      <Button buttonColor={props => props.theme.colors.primary} buttonBorderRadius='0px' buttonSize='100px'><Link className='link' to='/'>Home</Link></Button>
-      <Button buttonColor={props => props.theme.colors.primary} buttonBorderRadius='0px' buttonSize='100px'><Link className='link' to='/store'>Store</Link></Button>
-      <Button buttonColor={props => props.theme.colors.primary} buttonBorderRadius='0px' buttonSize='100px'><Link className='link' to='/contact'>Contact</Link></Button>
-      <Button buttonColor={props => props.theme.colors.primary} buttonBorderRadius='0px' buttonSize='100px'><Link className='link' to='/abault'>Abault</Link></Button>
+      <Button size='100px'><Link className='link' to='/'>Home</Link></Button>
+      <Button size='100px'><Link className='link' to='/store'>Store</Link></Button>
+      <Button size='100px'><Link className='link' to='/contact'>Contact</Link></Button>
+      <Button size='100px'><Link className='link' to='/abault'>Abault</Link></Button>
     </FooterListStyle>
   );
 };

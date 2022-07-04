@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ProdutoSlideImgSt = styled.div`
+export const ProdContentSt = styled.div`
   min-width: 249px;
   max-width: 249px;
   height: auto;
@@ -8,9 +8,8 @@ export const ProdutoSlideImgSt = styled.div`
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid;
-
   border-radius: 10px;
-  border-color: ${props => props.theme.colors.bordeer};
+  border-color: red;
 `
 export const PCardAjustFlexSt = styled.div`
   width: 249px;
@@ -47,17 +46,16 @@ export const ProdutoSlideImgConteinerSt = styled.div`
     height: 100%;
   }
 `
-export const MaisProdutosSlideSt = styled.div`
+export const ProdListSt = styled.div`
     width: 100%;
     height: auto;
     display: flex;
-    overflow-x: scroll;
+    flex-wrap: wrap;
     align-items: top;
     justify-content: space-between;
     border: 1px solid;
     border-radius: 10px;
     border-color: ${props => props.theme.colors.bordeer};
-    scroll-snap-type: mandatory;
   `
 export const CadProdutosSlideSt = styled.div`
     width: 100%;

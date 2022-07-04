@@ -1,31 +1,45 @@
 import React from 'react';
+import { Url } from 'url';
 
 import { ButtonStyle } from './styles'
 
 interface ButtonProps {
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void; 
+  width?: string;
+  height?: string;
+  border?: string;
+  radius?: string;
   children?: React.ReactNode;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void; 
   disabled?: boolean;
   type?: "button" | "submit" | "reset";
-  size?: string;
-  border: string
+  name?: string;
+  value?: string;
 };
 
 export const Button = ({
   onClick,
   children,
   disabled,
+  name,
+  value,
   type,
-  size,
-  border='10px'
+  width,
+  height='30px',
+  border,
+  radius='10px'
 }: ButtonProps) => {
   return (
     <ButtonStyle
-      size={size}
+      width={width}
+      height={height}
       border={border}
+      radius={radius}
+      value={value}
+      name={name} 
       type={type}
       onClick={onClick}
-      disabled={disabled}>
+      disabled={disabled}
+    >
       {children}
     </ButtonStyle>
   );

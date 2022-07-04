@@ -1,56 +1,55 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-import {
-  ProdutoSlideImgSt,
-  ProdutoSlideImgbSt,
-  MaisProdutosSlideSt,
-  MaisProdutosSlidehSt
-} from './styles';
-import { Title } from '../title';
-import { Button } from '../button';
+import { Link } from 'react-router-dom';
+
 import {
   getFirestore,
   collection,
   getDocs
 } from "firebase/firestore";
-import { useEffect, useState } from "react";
-
 import { app } from '../../services/firebaseConfig';
 
-export const Prod = () => {
-  const [produtos, setprodutos] = useState([]);
+import {
+  ProdutoSlideImgbSt,
+  ProdutosSt,
+  ProdutoCardSt
+} from './styles';
+import Rating from '@mui/material/Rating';
+import { Title } from '../title';
+import { Button } from '../button';
+
+export const PlacasDeVideo = () => {
+  const [placasDeVideo, setplacasDeVideo] = useState([]);
 
   const db = getFirestore(app);
-  const produtosCollectionRef = collection(db, "produtos");
+  const placasDeVideoCollectionRef = collection(db, "placasDeVideo");
 
   useEffect(() => {
-    const getprodutos = async () => {
-      const data = await getDocs(produtosCollectionRef);
-      setprodutos(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    const getplacasDeVideo = async () => {
+      const data = await getDocs(placasDeVideoCollectionRef);
+      setplacasDeVideo(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
-    getprodutos();
+    getplacasDeVideo();
   }, []);
 
   return (
     <div>
-      <MaisProdutosSlidehSt>
-        {produtos.map((produto) => {
+      <ProdutosSt>
+        {placasDeVideo.map((produto) => {
           return (
-            <>
-              <ProdutoSlideImgSt>
-                <img className='img2' src="https://img.terabyteshop.com.br/produto/g/placa-de-video-galax-geforce-rtx-3090-ex-gaming-pink-1-click-oc-24gb-gddr6x-384bit_104303.png" alt='{productImageAlt}' />
-              </ProdutoSlideImgSt>
-                <Title>{produto.name}</Title>
-                <Title>{produto.preco}</Title>
-                <Button buttonBorderRadius='10px'
-                  buttonColor={props => props.theme.colors.background}
-                  buttonSize='80px'
-                  onClick='{() => deleteproduto(produto.id)}'
-                  type='button'>Ver Mais</Button>
-            </>
+            <ProdutoCardSt>
+              <ProdutoSlideImgbSt>
+                <img className='img' src={produto.image} alt='{productImageAlt}' />
+              </ProdutoSlideImgbSt>
+              <Title>{produto.name}</Title>
+              <Title>R$ {produto.price}</Title>
+              <Rating name="read-only" value={produto.avaliation} readOnly />
+              <Button size='80px'
+                type='button'><Link to='/produto'>Ver Mais</Link></Button>
+            </ProdutoCardSt>
           );
         })}
-      </MaisProdutosSlidehSt>
+      </ProdutosSt>
     </div>
   );
 };
@@ -69,26 +68,21 @@ export const ProdutosEletronicos = () => {
   }, []);
 
   return (
-    <div>
-      <MaisProdutosSlideSt>
+      <ProdutosSt>
         {eletronicproducts.map((produto) => {
           return (
-            <>
+            <ProdutoCardSt>
               <ProdutoSlideImgbSt>
                 <img className='img' src={produto.image} alt='{productImageAlt}' />
               </ProdutoSlideImgbSt>
                 <Title>{produto.name}</Title>
                 <Title>R$ {produto.price}</Title>
-                <Title>{produto.avaliation}</Title>
-                <Button buttonBorderRadius='10px'
-                  buttonColor={props => props.theme.colors.background}
-                  buttonSize='80px'
-                  onClick='{() => deleteproduto(produto.id)}'
-                  type='button'>Ver Mais</Button>
-            </>
+                <Rating name="read-only" value={produto.avaliation} readOnly />
+                <Button size='80px'
+                type='button'><Link to='/produto'>Ver Mais</Link></Button>
+            </ProdutoCardSt>
           );
         })}
-      </MaisProdutosSlideSt>
-    </div>
+      </ProdutosSt>
   );
 };

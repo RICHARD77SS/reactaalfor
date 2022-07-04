@@ -1,45 +1,42 @@
 import styled from 'styled-components';
 
-export const ProdutoSlideImgSt = styled.div`
-  min-width: 18%;
-  max-width: 18%;
-  height: 18%;
-  display: block;
-  border: 1px solid;
-  border-radius: 10px;
-  border-color: ${props => props.theme.colors.bordeer};
-`
 export const ProdutoSlideImgbSt = styled.div`
-  min-width: 95%;
-  max-width: 95%;
-  height: 240px;
+  min-width: 100%;
+  max-width: 100%;
+  height: 190px;
   display: block;
   border: 1px solid;
   border-radius: 10px;
   border-color: ${props => props.theme.colors.bordeer};
+  .img {
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width: 564){
+    height: 200px;
+  }
 `
-export const MaisProdutosSlideSt = styled.div`
+export const ProdutosSt = styled.div`
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
-    overflow-x: scroll;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
-    border: 1px solid;
+    justify-content: space-around;
     border-radius: 10px;
     border-color: ${props => props.theme.colors.bordeer};
     scroll-snap-type: mandatory;
   `
-export const MaisProdutosSlidehSt = styled.div`
-    width: 100%;
-    height: auto;
-    display: flex;
-    overflow-x: scroll;
-    align-items: center;
-    justify-content: flex-start;
-    border: 1px solid;
-    border-radius: 10px;
-    border-color: ${props => props.theme.colors.bordeer};
-    scroll-snap-type: mandatory;
-  `
+export const ProdutoCardSt = styled.div`
+  width: 190px;
+  height: 300px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: ${props => props.theme.colors.bordeer};
+  @media (max-width: 1024px) {
+    width: 180px;
+  }
+  @media (max-width: 768px) {
+  width: 190px;
+  }
+`
