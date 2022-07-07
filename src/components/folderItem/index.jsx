@@ -21,7 +21,7 @@ export const FolderItem1 = () => {
       </FolderTextDiv>
       <Button
         type='button'
-        size='80px'>More Infos
+        width='80px'>More Infos
       </Button>
     </FolderItemStyle>
   )

@@ -1,7 +1,5 @@
 import React from 'react';
 import { FolderStyle } from './styles';
-import { Button } from '../button';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FolderItem1, FolderItem2, FolderItem3, FolderItem4 } from '../folderItem';
 

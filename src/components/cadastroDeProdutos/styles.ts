@@ -11,7 +11,7 @@ export const ProdContentSt = styled.div`
   border-radius: 10px;
   border-color: red;
 `
-export const PCardAjustFlexSt = styled.div`
+export const CardTopSt = styled.div`
   width: 249px;
   height: auto;
   display: flex;
@@ -20,7 +20,7 @@ export const PCardAjustFlexSt = styled.div`
   border-radius: 10px;
   border-color: ${props => props.theme.colors.bordeer};
 `
-export const PCardAjustTxtSt = styled.div`
+export const CardBottomSt = styled.div`
   width: 249px;
   height: auto;
   display: flex;
@@ -31,7 +31,7 @@ export const PCardAjustTxtSt = styled.div`
   border-radius: 10px;
   border-color: ${props => props.theme.colors.bordeer};
 `
-export const ProdutoSlideImgConteinerSt = styled.div`
+export const CardImgContSt = styled.div`
   min-width: 150px;
   max-width: 150px;
   height: 150px;
@@ -52,12 +52,12 @@ export const ProdListSt = styled.div`
     display: flex;
     flex-wrap: wrap;
     align-items: top;
-    justify-content: space-between;
+    justify-content: space-around;
     border: 1px solid;
     border-radius: 10px;
     border-color: ${props => props.theme.colors.bordeer};
   `
-export const CadProdutosSlideSt = styled.div`
+export const FormCadastroSt = styled.div`
     width: 100%;
     height: auto;
     display: flex;

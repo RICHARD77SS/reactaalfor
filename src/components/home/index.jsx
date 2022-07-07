@@ -9,6 +9,7 @@ import { Slider, Slide } from '../slider';
 import { BollsContainer } from '../bollsContainer'
 import { Button } from '../button'
 import { FaGoogle } from 'react-icons/fa';
+import { GradientGenerator } from '../gradiente';
 
 const settings= {
   spaceBetween: 50,
@@ -32,6 +33,7 @@ function Home() {
       <div>
         <Button size='auto' onClick={() => signOut()}> <FaGoogle />Sair  {userLogado.displayName}</Button>
       </div>
+      <GradientGenerator></GradientGenerator>
       <Slider settings={settings} >
           <Slide>
             <MainSlideImage />

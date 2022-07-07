@@ -10,20 +10,31 @@ interface Props {
   className?: string;
   disabled?: boolean;
   required?: boolean;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  min?: number;
+  max?: number;
+  step?: number;
 }
 
 export const Input: React.FC<Props> = (
   {
     placeholder,
+    min,
+    max,
     type,
     inputSize,
     list,
     disabled,
     className,
-    required
+    required,
+    onChange,
+    step
   }
 ) => (
-    <Inputs
+  <Inputs
+      min={min}
+      max={max}
+      step={step}
       placeholder={ placeholder}
       type={type}
       inputSize={inputSize}
@@ -31,6 +42,7 @@ export const Input: React.FC<Props> = (
       disabled={disabled}
       className={className}
       required={required}
+      onChange={onChange}
     >
     </Inputs>
 );

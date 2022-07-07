@@ -30,7 +30,7 @@ export const PlacasDeVideo = () => {
       setplacasDeVideo(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getplacasDeVideo();
-  }, []);
+  }, [placasDeVideoCollectionRef]);
 
   return (
     <div>
@@ -65,7 +65,7 @@ export const ProdutosEletronicos = () => {
       seteletronicproducts(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getprodutos();
-  }, []);
+  }, [eletronicproductsCollectionRef]);
 
   return (
       <ProdutosSt>

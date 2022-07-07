@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const LabelStyle = styled.div`
+export const LabelStyle = styled.label`
   width: fit-content;
   height: fit-content;
   display: flex;

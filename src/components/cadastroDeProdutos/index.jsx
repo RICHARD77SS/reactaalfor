@@ -3,13 +3,14 @@ import React from 'react';
 import {
   ProdContentSt,
   ProdListSt,
-  CadProdutosSlideSt,
-  ProdutoSlideImgConteinerSt,
-  PCardAjustFlexSt,
-  PCardAjustTxtSt
+  FormCadastroSt,
+  CardImgContSt,
+  CardTopSt,
+  CardBottomSt
 } from './styles';
 import { Title } from '../title';
 import { Button } from '../button';
+import { Input } from '../input';
 import Rating from '@mui/material/Rating';
 import {
   getFirestore,
@@ -20,7 +21,6 @@ import {
   getDocs,
 } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import { Navigate } from 'react-router-dom'
 import { app } from '../../services/firebaseConfig';
 
 export const ACadastroProduto = () => {
@@ -59,7 +59,7 @@ export const ACadastroProduto = () => {
       seteletronicproducts(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getprodutos();
-  }, []);
+  }, [eletronicproductsCollectionRef]);
 
 
 
@@ -70,44 +70,44 @@ export const ACadastroProduto = () => {
   }
 
   return (
-    <CadProdutosSlideSt>
-      <input
+    <FormCadastroSt>
+      <Input
         type="text"
         placeholder=" Nome do produto"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
-      <input
+      <Input
         type="text"
         placeholder=" Preço do produto"
         value={price}
         onChange={(e) => setprice(e.target.value)}
       />
-      <input
+      <Input
         type="text"
         placeholder=" Descrição do produto"
         value={description}
         onChange={(e) => setdescription(e.target.value)}
       />
-      <input
+      <Input
         type="text"
         placeholder=" Avaliaçao do produto"
         value={avaliation}
         onChange={(e) => setavaliation(e.target.value)}
       />
-      <input
+      <Input
         type="text"
         placeholder=" Quantidade de produtos"
         value={inventory}
         onChange={(e) => setinventory(e.target.value)}
       />
-      <input
+      <Input
         type="text"
         placeholder=" Comentarios"
         value={comments}
         onChange={(e) => setcomments(e.target.value)}
       />
-      <input
+      <Input
         type="text"
         placeholder=" image"
         value={image}
@@ -115,17 +115,17 @@ export const ACadastroProduto = () => {
       />
       <Button
         size='100px'
-        onClick={criarDado}><Navigate to='/admi' /> Criar dado</Button>
+        onClick={criarDado}>Criar dado</Button>
 
       <ProdListSt>
         {eletronicproducts.map((produto) => {
           return (
               <ProdContentSt>
-                <PCardAjustFlexSt>
-                  <ProdutoSlideImgConteinerSt>
+                <CardTopSt>
+                  <CardImgContSt>
                     <img className='imgc' src={produto.image} alt="" />
-                  </ProdutoSlideImgConteinerSt>
-                  <PCardAjustTxtSt>
+                  </CardImgContSt>
+                  <CardBottomSt>
                     <Title>{produto.name}</Title>
                     <Title>R$ {produto.price}</Title>
                     <Button
@@ -133,8 +133,8 @@ export const ACadastroProduto = () => {
                       onClick={() => deleteproduto(produto.id)}
                       type='button'>Buy</Button>
                     <Title fontSize='.6rem' >Estoque: {produto.inventory}</Title>
-                  </PCardAjustTxtSt>
-                </PCardAjustFlexSt>
+                  </CardBottomSt>
+                </CardTopSt>
                 <Title fontSize='.8rem'>{produto.description}</Title>
                 <details>
                   <summary>Comments</summary>
@@ -144,11 +144,11 @@ export const ACadastroProduto = () => {
                 <Button
                   size='80px'
                   onClick={() => deleteproduto(produto.id)}
-                type='button'><Navigate to='/admi' />Deletar</Button>
+                type='button'>Deletar</Button>
               </ProdContentSt>
           );
         })}
       </ProdListSt>
-    </CadProdutosSlideSt>
+    </FormCadastroSt>
   );
 };
