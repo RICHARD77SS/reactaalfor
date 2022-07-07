@@ -14,6 +14,7 @@ interface Props {
   min?: number;
   max?: number;
   step?: number;
+  value?: number;
 }
 
 export const Input: React.FC<Props> = (
@@ -28,7 +29,8 @@ export const Input: React.FC<Props> = (
     className,
     required,
     onChange,
-    step
+    step,
+    value
   }
 ) => (
   <Inputs
@@ -43,6 +45,7 @@ export const Input: React.FC<Props> = (
       className={className}
       required={required}
       onChange={onChange}
+      value={value}
     >
     </Inputs>
 );

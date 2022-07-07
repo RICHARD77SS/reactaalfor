@@ -23,6 +23,7 @@ import { LoginPage } from './components/login';
 import { ProdutoPage } from './components/produtoPage';
 import { AreaAdmin } from './components/areAdm';
 import { PrivateRoutes } from "../src/routes";
+import { GradientGenerator } from './components/gradiente';
 
 const App = () => {
   const [theme, setTheme] = usePeristedState<DefaultTheme>('theme', light);
@@ -44,6 +45,7 @@ const App = () => {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/abault" element={<Abault />} />
                 <Route path="/login" element={<LoginPage />} />
+                <Route path="/gradientGenerator" element={<GradientGenerator />} />
                 <Route path="/produto" element={<ProdutoPage />}></Route>
 
                 <Route path="/admi" element={<PrivateRoutes />}>

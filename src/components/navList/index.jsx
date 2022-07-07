@@ -12,6 +12,7 @@ export const NavList = () => {
     <NavListStyle>
       <Button width='100px'><Link className='link' to='/'>Home</Link></Button>
       <Button width='100px'><Link className='link' to='/store'>Store</Link></Button>
+      <Button width='100px'><Link className='link' to='/gradientGenerator'>GradGen</Link></Button>
       <Button width='100px'><Link className='link' to='/contact'>Contact</Link></Button>
       <Button width='100px'><Link className='link' to='/abault'>Abault</Link></Button>
       <Button width='100px'><Link className='link' to='/admi'>Adm</Link></Button>

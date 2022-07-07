@@ -11,20 +11,13 @@ export const GradColorSt = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: left;
+  align-items: center;
 `
 export const GradInputSt = styled.div`
   width: 50%;
   height: 100%;
   display: flex;
-  align-items: center;
-`
-export const GradInputLabelSt = styled.div`
-  width: 150px;
-  height: 100%;
-  margin: 0 1rem;
-  display: flex;
+  flex-direction: column;
   align-items: center;
 `
 export const GradViewSt = styled.div`
@@ -37,12 +30,11 @@ export const GradViewSt = styled.div`
 `
 export const ViewSt = styled.div`
   width: 100%;
-  height: 100px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: ${props => props.color};
+  background-color: ${props => props.color};
 `
-
 
 

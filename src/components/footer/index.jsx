@@ -10,10 +10,12 @@ export const Footer = () => {
   return (
     <FooterStyle>
       <FooterDivStyle>
-        <Redes />
         <Logo />
+        <Redes />
       </FooterDivStyle>
-      <FooterList />
+      <FooterDivStyle>
+        <FooterList />
+      </FooterDivStyle>
     </FooterStyle>
   );
 };

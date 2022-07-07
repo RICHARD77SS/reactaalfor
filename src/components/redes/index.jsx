@@ -7,11 +7,11 @@ import { Button } from '../button';
 export const Redes = () => {
   return (
     <RedesConteinerStyle>
-      <Button size='30px'><FaFacebookF /></Button>
-      <Button size='30px'><FaTwitter /></Button>
-      <Button size='30px'><FaInstagram /></Button>
-      <Button size='30px'><FaGithub /></Button>
-      <Button size='30px'><FaLinkedinIn /></Button>
+      <Button width='30px' radius='50px'><FaFacebookF /></Button>
+      <Button width='30px' radius='50px'><FaTwitter /></Button>
+      <Button width='30px' radius='50px'><FaInstagram /></Button>
+      <Button width='30px' radius='50px'><FaGithub /></Button>
+      <Button width='30px' radius='50px'><FaLinkedinIn /></Button>
     </RedesConteinerStyle>
   );
 };

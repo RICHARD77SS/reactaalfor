@@ -21,8 +21,6 @@ const StoreConteiner = () => {
       <Filters></Filters>
       <ListsProductsStyle>
         <ProdutosEletronicos />
-      </ListsProductsStyle>
-      <ListsProductsStyle>
         <PlacasDeVideo />
       </ListsProductsStyle>
     </StoreConteinerFlex>
