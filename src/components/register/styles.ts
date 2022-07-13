@@ -7,7 +7,10 @@ export const LoginContainerStyle = styled.div`
   justify-content: space-evenly;
   width: 100%;
   height: 300px;
-  
+  .ptext {
+    font-size: .8rem;
+    margin-left: 1rem;
+  }
 `
 
 export const DivFlexStyle = styled.div`

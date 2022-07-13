@@ -9,7 +9,7 @@ interface Props {
 
 export const Label: React.FC<Props> = ({
   children,
-  className
+  className,
 } ) =>  (
     <LabelStyle className={className}>{children}</LabelStyle>
 );

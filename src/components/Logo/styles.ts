@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const LogoM = styled.span`
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 800;
   color: ${props => props.theme.colors.text};
   @media (max-width: 1024px) {
@@ -13,7 +13,7 @@ export const LogoM = styled.span`
 `;
 
 export const LogoP = styled.span`
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 800;
   color: ${props => props.theme.colors.text};
   display: none;

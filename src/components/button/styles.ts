@@ -15,9 +15,11 @@ export const ButtonStyle = styled.button<ButtonProps>`
   border: ${props => props.border}; 
   background: ${props => props.theme.colors.primary};
   color: ${props => props.theme.colors.text};
-  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &:hover {
     background: ${props => props.theme.colors.secundary};
-    color: #000;
+    color: ${props => props.theme.colors.secundary};
 }
 `

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const SliderConteinerStyle = styled.div`
-  width: 100%;
-  height: auto;
+  width: 90%;
+  height: 480px;
   border-radius: 15px;
   background: ${props => props.theme.colors.primary};
   color: ${props => props.theme.colors.text};

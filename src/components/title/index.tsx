@@ -9,13 +9,15 @@ interface Props {
 }
 
 export const Title: React.FC <Props> = ({
-  children,
-  fontSize,
-  fontWeight
+  children='insira um filho',
+  fontSize='1rem',
+  fontWeight = '700',
+
 }) => (
   <TitleSt
     fontWeight={fontWeight}
-    fontSize={fontSize} >
+    fontSize={fontSize}>
+    
     {children}
   </TitleSt >
 )

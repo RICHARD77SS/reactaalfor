@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FolderItemStyle } from './styles'
 import { FolderTextDiv } from '../folder/styles'
 import { Title } from '../title'
@@ -8,16 +8,38 @@ const color1 = '#c2aeff';
 const color2 = '#aeffba';
 const color3 = '#f5f5f5';
 
+
+
 export const FolderItem1 = () => {
+  const [folders, setFolders] = useState([]);
+  useEffect(() => {
+    fetch('./folders.json', {
+      headers: {
+        Accept: "application/json"
+      }
+    }).then(res => res.json())
+      .then(res => setFolders(res.data))
+  }, []);
   return (
-  
+
     <FolderItemStyle>
       <FolderTextDiv>
-        <Title fontSize='1.5rem' fontColor={color1}>Folder 1</Title>
+        {folders.map((fdata, id) => {
+          return (
+            <div key={id}>
+              <Title>
+                {fdata.folder}
+              </Title>
+              <Title>
+                {fdata.title}
+              </Title>
+              <Title>
+                {fdata.desc}
+              </Title>
+            </div>
+          )
+        })}
         <br />
-        <Title fontSize='1rem' fontColor={color2}>Pure HTML demonstration</Title>
-        <br />
-        <Title fontSize='1rem' fontColor={color3}> Motivation: Training my habilities in HTML and momorize the differents possibilities</Title>
       </FolderTextDiv>
       <Button
         type='button'
@@ -28,7 +50,7 @@ export const FolderItem1 = () => {
 }
 export const FolderItem2 = () => {
   return (
-  
+
     <FolderItemStyle>
       <FolderTextDiv>
         <Title fontSize='1rem' fontColor={color1}>Folder 2</Title>
@@ -37,7 +59,6 @@ export const FolderItem2 = () => {
         <br />
         <Title fontSize='1rem' fontColor={color3}>Motivation: Training my habilities in HTML e CSS. the Css is mutch used in styles the elements</Title>
       </FolderTextDiv>
-
       <Button
         type='button'
         size='80px'>More Infos
@@ -47,7 +68,7 @@ export const FolderItem2 = () => {
 }
 export const FolderItem3 = () => {
   return (
-  
+
     <FolderItemStyle>
       <FolderTextDiv>
         <Title fontSize='1rem' fontColor={color1}>Folder 3</Title>
@@ -66,7 +87,7 @@ export const FolderItem3 = () => {
 }
 export const FolderItem4 = () => {
   return (
-  
+
     <FolderItemStyle>
       <FolderTextDiv>
         <Title fontSize='1rem' fontColor={color1}>Folder 4</Title>

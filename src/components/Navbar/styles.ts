@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 100px;
-  background: ${props => props.theme.colors.background};
+  height: 70px;
+  background: ${props => props.theme.colors.primary};
   color: #FFF;
   display: flex;
   align-items: center;

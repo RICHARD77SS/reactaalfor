@@ -7,7 +7,6 @@ export const LoginContainerStyle = styled.div`
   justify-content: space-evenly;
   width: 100%;
   height: 300px;
-  
 `
 
 export const DivFlexStyles = styled.div`
@@ -17,7 +16,7 @@ export const DivFlexStyles = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding:0 0 1rem 0;
+  padding: 2rem 1rem;
   margin: 0 auto;
   .link {
     width: 100%;

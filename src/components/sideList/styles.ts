@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const SideListStyle = styled.ul`
-  width: auto;
+  width: fit-content;
   height: auto;
   display: flex;
-  justify-content: space-arrownd;
+  justify-content: space-around;
   .link {
     width: auto;
     padding: 5px 20px;
@@ -12,8 +12,5 @@ export const SideListStyle = styled.ul`
   }
   .link:hover {
     color: #000;
-  }
-  @media (max-width: 768px){
-    margin-left: 55%;
   }
 `;

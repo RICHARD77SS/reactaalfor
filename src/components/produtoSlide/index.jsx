@@ -17,7 +17,7 @@ import {
 import Rating from '@mui/material/Rating';
 import { Title } from '../title';
 import { Button } from '../button';
-
+ 
 export const PlacasDeVideo = () => {
   const [placasDeVideo, setplacasDeVideo] = useState([]);
 

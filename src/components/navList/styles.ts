@@ -1,19 +1,25 @@
 import styled from 'styled-components';
 
 export const NavListStyle = styled.ul`
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 40px;
   display: flex;
-  justify-content: space-arrownd;
+  justify-content: center;
   @media (max-width: 768px){
     display: none;
   }
   .link {
-    width: 100%;
-    padding: 5px 26px;
+    width: fit-content;
+    height: 34px;
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    font-weight: 700;
+    border-radius: 10px;
     color: ${props => props.theme.colors.text};
+
   }
   .link:hover {
-    color: #000;
+    transition: 1s;
+    box-shadow: inset 0 0 10px ${props => props.theme.colors.text};
   }
 `

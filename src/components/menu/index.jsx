@@ -1,20 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import { MenuIcon } from './styles.ts';
+import { MenuIcon, MenuItems } from './styles';
 import MenuItem from '../MenuItem';
-import styled from 'styled-components';
-
-const MenuItems = styled.div`
-  width: 300px;
-  height: 400px;
-  border-radius: 10px;
-  background-color: ${props => props.theme.colors.primary};
-  transform: translateX(-90%);
-  position: absolute;
-  z-index: 999;
-`;
-
-
 
 const Menu = () => {
   const [active, setMode] = useState(false);

@@ -20,6 +20,7 @@ import Store from './components/store';
 import Abault from './components/abault';
 import Contact from './components/contact';
 import { LoginPage } from './components/login';
+import { RegisterPage } from './components/register'
 import { ProdutoPage } from './components/produtoPage';
 import { AreaAdmin } from './components/areAdm';
 import { PrivateRoutes } from "../src/routes";
@@ -31,10 +32,10 @@ const App = () => {
   const toggleTheme = () => {
     setTheme(theme.title === 'light' ? dark : light);
   };
-
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
+        
         <GlobalStyle />
         <Header toggleTheme={toggleTheme} />
         <Navbar />
@@ -47,7 +48,7 @@ const App = () => {
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/gradientGenerator" element={<GradientGenerator />} />
                 <Route path="/produto" element={<ProdutoPage />}></Route>
-
+                <Route path="/register" element={<RegisterPage />}></Route>
                 <Route path="/admi" element={<PrivateRoutes />}>
                   <Route path="/admi" element={<AreaAdmin />} />
                 </Route>

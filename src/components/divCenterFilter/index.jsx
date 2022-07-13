@@ -3,10 +3,8 @@ import React from 'react';
 import { DivCenterStyle } from './style';
 import { Title } from '../filterTitle';
 
-export const DivCenterFilter = () => {
-  return (
+export const DivCenterFilter = () =>  (
     <DivCenterStyle>
-      <Title>Filtro</Title>
+      <Title fontSize='1.5rem' fontWeight='700'>Filtros</Title>
     </DivCenterStyle>
-  );
-};
+);

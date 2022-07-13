@@ -9,9 +9,7 @@ const SideList = () => {
 
   return (
     <SideListStyle>
-      <Button size='90px'><Link className='link' to='/login'>Login</Link>
-      </Button>
-      <Button size='40px'><FaShoppingCart />
+      <Button width='40px'><FaShoppingCart />
       </Button>
       <div className=""><Menu /></div>
     </SideListStyle>
