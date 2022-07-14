@@ -6,6 +6,7 @@ interface ButtonProps {
   height?: string;
   border?: string;
   radius?: string;
+  background?: string;
 };
 
 export const ButtonStyle = styled.button<ButtonProps>`
@@ -13,7 +14,7 @@ export const ButtonStyle = styled.button<ButtonProps>`
   height: ${props => props.height};
   border-radius: ${props => props.radius};
   border: ${props => props.border}; 
-  background: ${props => props.theme.colors.primary};
+  background: ${props => props.background};
   color: ${props => props.theme.colors.text};
   display: flex;
   align-items: center;

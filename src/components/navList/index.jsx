@@ -17,6 +17,7 @@ export const NavList = () => {
       <Link className='link' to='/login'>Login</Link>
       <Link className='link' to='/register'>Register</Link>
       <Link className='link' to='/admi'>Adm</Link>
+      <Link className='link' to='/perfil'>Perfil</Link>
     </NavListStyle>
   );
 }; 

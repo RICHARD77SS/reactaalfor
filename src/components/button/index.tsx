@@ -13,6 +13,7 @@ interface ButtonProps {
   type?: "button" | "submit" | "reset";
   name?: string;
   value?: string;
+  background?: string;
 };
 
 export const Button = ({
@@ -25,7 +26,8 @@ export const Button = ({
   width,
   height='30px',
   border,
-  radius='10px'
+  radius = '10px',
+  background
 }: ButtonProps) => {
   return (
     <ButtonStyle
@@ -38,6 +40,7 @@ export const Button = ({
       type={type}
       onClick={onClick}
       disabled={disabled}
+      background={background}
     >
       {children}
     </ButtonStyle>
