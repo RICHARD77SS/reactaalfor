@@ -1,44 +1,5 @@
 import Styled from 'styled-components';
 
-interface Props {
-  height: string;
-}
-export const PerfilSt = Styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`
-export const PerfilInfoSt = Styled.div`
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  @media(max-width: 768px){
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-`
-export const PerfilSidebarSt = Styled.div`
-  width: 30%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid red;
-`
-export const OptionsdSt = Styled.div`
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid red;
-`
 export const OptionSt = Styled.div`
   width: 60%;
   height: auto;
@@ -57,30 +18,27 @@ export const OptionsSt = Styled.ul`
   align-items: center;
   justify-content: center;
   border: 1px solid black;
+  margin: 1rem;
 
 `
 export const UserStatisticSt = Styled.div`
   width: 100%;
-  height: 200px;
+  height: auto;
   display: flex;
   align-items: start;
   justify-content: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 export const UgraphSt = Styled.div`
-  width: 250px;
+  width: 280px;
   height: 200px;
   display: flex;
   align-items: end;
   justify-content: space-around;
   border-bottom: 1px solid black;
-  `
-export const UserDataSt = Styled.div<Props>`
-  width: 30px;
-  height: ${Props => Props.height};
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #000;
+  margin: 1rem;
   `
 export const UgraphNumSt = Styled.div`
   width: 100px;
