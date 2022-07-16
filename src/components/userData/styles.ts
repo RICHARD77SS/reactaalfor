@@ -2,6 +2,7 @@ import Styled from 'styled-components';
 
 interface Props {
   height: string;
+  color?: string;
 }
 
 
@@ -12,7 +13,7 @@ export const UserDataSt = Styled.div<Props>`
   display: flex;
   align-items: end;
   justify-content: space-around;
-  background-color: #000;
+  background-color: ${Props => Props.color};
   color: #fff;
   font-size: .8rem;
   `

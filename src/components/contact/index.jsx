@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AiOutlineGithub, AiFillLinkedin, AiFillInstagram, AiFillCodepenCircle } from 'react-icons/ai'
+import { AiOutlineGithub, AiFillLinkedin, AiFillInstagram, AiFillCodepenCircle, AiFillTwitterCircle } from 'react-icons/ai'
 
 import { ContactConteinerStyle, ListLinkSt } from './styles';
 import { Title } from '../title'
@@ -28,6 +28,12 @@ const Contact = () => {
           width='200px'
           type='button'
           ><a  target="_blank" rel="noreferrer" href='https://www.instagram.com/richi_ri_kkkj/'>Instagram</a></Button>
+        </ContactConteinerStyle>
+        <ContactConteinerStyle className='icon'>
+          <AiFillTwitterCircle size='35'/><Button
+          width='200px'
+          type='button'
+          ><a target="_blank" rel="noreferrer" href='https://twitter.com/Theneike_'>Twitter</a></Button>
         </ContactConteinerStyle>
         <ContactConteinerStyle className='icon'>
           <AiFillCodepenCircle size='35'/><Button

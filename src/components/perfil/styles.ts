@@ -29,18 +29,15 @@ export const PerfilSidebarSt = Styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   border: 1px solid red;
 `
 export const OptionsdSt = Styled.div`
   width: 100%;
   height: fit-content;
-  padding: 1rem 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
   border: 1px solid red;
 `
 export const OptionSt = Styled.div`
@@ -50,18 +47,9 @@ export const OptionSt = Styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+  border: 1px solid pink;
 `
-export const UserInfoSt = Styled.ul`
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
-  margin-bottom: 2rem;
-`
+
 export const OptionsSt = Styled.ul`
   width: 300px;
   height: auto;
@@ -70,32 +58,14 @@ export const OptionsSt = Styled.ul`
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-  margin-bottom: 2rem;
-`
-export const UserSt = Styled.div`
-  width: 100px;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
 
 `
-export const ListSt = Styled.li`
-  width: fit-content;
-  height: auto;
-  display: flex;
-  padding: .5rem;
-  `
-
 export const UserStatisticSt = Styled.div`
   width: 100%;
   height: 200px;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  border: 1px solid blue;
 `
 export const UgraphSt = Styled.div`
   width: 250px;
@@ -103,7 +73,7 @@ export const UgraphSt = Styled.div`
   display: flex;
   align-items: end;
   justify-content: space-around;
-  border-bottom: 1px solid green;
+  border-bottom: 1px solid black;
   `
 export const UserDataSt = Styled.div<Props>`
   width: 30px;
@@ -122,7 +92,7 @@ export const UgraphNumSt = Styled.div`
 `
 export const VerticalDataSt = Styled.div`
   width: 3px;
-  height: 220px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   background: #000;
@@ -146,4 +116,47 @@ export const UserHistory = Styled.div`
   align-items: center;
   justify-content: center;
   border-top: 1px solid black;
+`
+export const PublicInfoSt = Styled.div`
+  width: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  
+`
+export const PublicSt = Styled.div`
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+ align-items: start;
+  justify-content: center;
+  padding: 5%;
+`
+export const ButtonSt = Styled.div`
+  width: 250px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+`
+export const BolonSt = Styled.div`
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background: #000;
+  border-radius: 50%;
+`
+export const Bolon3St = Styled.div`
+  width: 30px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
 `

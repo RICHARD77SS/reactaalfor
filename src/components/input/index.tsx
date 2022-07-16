@@ -14,7 +14,7 @@ interface Props {
   min?: number;
   max?: number;
   step?: number;
-  value?: number;
+  value?: string;
 }
 
 export const Input: React.FC<Props> = (

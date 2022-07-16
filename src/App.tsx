@@ -12,7 +12,7 @@ import dark from './styles/themes/dark';
 
 import GlobalStyle from './styles/global';
 import Header from './components/header';
-
+import { PerfilRedes } from './components/perfilRedes';
 import Navbar from './components/Navbar'
 import { Footer } from './components/footer';
 import Home from './components/home';
@@ -50,7 +50,9 @@ const App = () => {
                 <Route path="/gradientGenerator" element={<GradientGenerator />} />
                 <Route path="/produto" element={<ProdutoPage />}></Route>
                 <Route path="/register" element={<RegisterPage />}></Route>
-                <Route path="/perfil" element={<Perfil />}></Route>
+                <Route path="/perfil" element={<Perfil />}>
+                  <Route path="/perfil/redes" element={<PerfilRedes />} />
+                </Route>
                 <Route path="/admi" element={<PrivateRoutes />}>
                   <Route path="/admi" element={<AreaAdmin />} />
                 </Route>

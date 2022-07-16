@@ -4,13 +4,18 @@ import { UserDataSt } from './styles';
 
 interface Props {
   height: string;
+  color?: string;
   children?: string;
 }
 
-export const UserData: React.FC<Props> = ({ height, children }) => {
+export const UserData: React.FC<Props> = ({
+  height,
+  children,
+  color = '#000'
+}) => {
 
   return (
-    <UserDataSt height={height}>{children}</UserDataSt>
+    <UserDataSt height={height} color={color}>{children}</UserDataSt>
   )
 }
 
