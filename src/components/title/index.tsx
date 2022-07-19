@@ -3,7 +3,7 @@ import React from 'react';
 import { TitleSt } from './styles';
 
 interface Props {
-  children: string;
+  children: any;
   fontSize: string;
   fontWeight?: string;
 }

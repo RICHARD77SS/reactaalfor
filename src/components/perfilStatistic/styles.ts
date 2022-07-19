@@ -1,13 +1,25 @@
 import Styled from 'styled-components';
 
 export const OptionSt = Styled.div`
-  width: 60%;
+  width: 70%;
   height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   border: 1px solid pink;
+`
+export const ConteinerSt = Styled.div`
+  width: fit-content;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  @media (max-width: 820px){
+    flex-direction: column;
+  }
+  
 `
 
 export const OptionsSt = Styled.ul`
@@ -18,27 +30,27 @@ export const OptionsSt = Styled.ul`
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-  margin: 1rem;
-
 `
 export const UserStatisticSt = Styled.div`
   width: 100%;
   height: auto;
   display: flex;
-  align-items: start;
-  justify-content: center;
-  @media (max-width: 768px) {
-    flex-direction: column;
+  align-items: end;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @media (max-width: 690px){
+    width: 80%;
   }
+
 `
 export const UgraphSt = Styled.div`
-  width: 280px;
+  width: 250px;
   height: 200px;
   display: flex;
   align-items: end;
   justify-content: space-around;
   border-bottom: 1px solid black;
-  margin: 1rem;
+  margin: 1.5rem;
   `
 export const UgraphNumSt = Styled.div`
   width: 100px;
@@ -48,7 +60,7 @@ export const UgraphNumSt = Styled.div`
   justify-content: space-around;
 `
 export const VerticalDataSt = Styled.div`
-  width: 3px;
+  width: 2px;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -88,7 +100,7 @@ export const PublicSt = Styled.div`
   height: auto;
   display: flex;
   flex-wrap: wrap;
- align-items: start;
+  align-items: start;
   justify-content: center;
   padding: 5%;
 `

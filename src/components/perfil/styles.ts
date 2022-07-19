@@ -10,6 +10,14 @@ export const PerfilSt = Styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  .label {
+    font-size: .8rem;
+  }
+  @media(max-width: 640px) {
+    .label {
+      font-size: .6rem;
+    }
+  }
 `
 export const PerfilInfoSt = Styled.div`
   width: 100%;

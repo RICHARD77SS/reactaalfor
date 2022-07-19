@@ -25,6 +25,7 @@ import { AreaAdmin } from './components/areAdm';
 import { PrivateRoutes } from "../src/routes";
 import { GradientGenerator } from './components/gradiente';
 import { Perfil } from './components/perfil';
+import { Carrinho } from './components/carrinho';
 
 const App = () => {
   const [theme, setTheme] = usePeristedState<DefaultTheme>('theme', light);
@@ -50,6 +51,7 @@ const App = () => {
                 <Route path="/produto" element={<ProdutoPage />}></Route>
                 <Route path="/register" element={<RegisterPage />}></Route>
                 <Route path="/perfil" element={<Perfil />}/>
+                <Route path="/carrinho" element={<Carrinho />}/>
                 <Route path="/admi" element={<PrivateRoutes />}>
                   <Route path="/admi" element={<AreaAdmin />} />
                 </Route>

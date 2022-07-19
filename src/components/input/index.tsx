@@ -4,7 +4,7 @@ import { Inputs } from './styles';
 
 interface Props {
   inputSize: string;
-  placeholder: string;
+  placeholder?: string;
   type: string;
   list?: string;
   className?: string;

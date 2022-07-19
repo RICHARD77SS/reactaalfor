@@ -6,7 +6,7 @@ import { UserInfoSt, ListSt, UserSt } from './styles'
 import { Title } from '../title';
 import { Button } from '../button';
 
- 
+
 export const PerfilUser: React.FC = () => {
   const user = 'Username'
   const name = 'name'
@@ -15,7 +15,7 @@ export const PerfilUser: React.FC = () => {
   return (
     <UserInfoSt>
       <UserSt>
-        <FaUserAstronaut size='80' /><Button
+        <FaUserAstronaut size='50' /><Button
           border='none' height='fit-content' radius='none'><FaPenSquare /></Button>
       </UserSt>
       <ListSt>

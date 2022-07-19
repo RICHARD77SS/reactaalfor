@@ -1,13 +1,18 @@
 import React from 'react';
 
-import { PerfilUser } from '../perfilUser'
+
 import { PerfilEndereco } from '../perfilEndereco'
 import { PerfilInfo } from '../perfilInfo'
 import { PerfilStatistic } from '../perfilStatistic';
 import { PerfilRedes } from '../perfilRedes'
 
-import { PerfilSt, PerfilInfoSt, PerfilContenSt,  UserHistory} from './styles';
+import { PerfilSt, PerfilInfoSt, PerfilContenSt, UserHistory } from './styles';
 
+import { Acessibilidade } from '../acessibilidade';
+import { Aparencia } from '../aparencia';
+import { Carrinho } from '../carrinho';
+import { Contatos } from '../contatos';
+import { Galeria } from '../galeria';
 
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -55,49 +60,52 @@ export const Perfil: React.FC = () => {
   return (
     <PerfilSt>
       <Box
-        sx={{ flexGrow: 1, width: '100%' , display: 'flex', height: 'auto' }}
+        sx={{ flexGrow: 1, width: '100%', display: 'flex', height: 'auto' }}
       >
         <Tabs
           orientation="vertical"
           variant="scrollable"
           value={value}
           onChange={handleChange}
-          aria-label="Vertical tabs example"
+          aria-label="Vertical tabs "
           sx={{ borderRight: 1, borderColor: 'divider' }}
         >
-          <PerfilUser />
-          <Tab label="Perfil" {...a11yProps(0)} />
-          <Tab label="Endereço" {...a11yProps(1)} />
-          <Tab label="Redes" {...a11yProps(2)} />
-          <Tab label="Carrinho" {...a11yProps(3)} />
-          <Tab label="Contatos" {...a11yProps(4)} />
-          <Tab label="Galeria" {...a11yProps(5)} />
-          <Tab label="Acessibilidade" {...a11yProps(6)} />
-          <Tab label="Aparencia" {...a11yProps(7)} />
+          <Tab className='label' label="Perfil" {...a11yProps(0)} />
+          <Tab className='label' label="Endereço" {...a11yProps(1)} />
+          <Tab className='label' label="Redes" {...a11yProps(2)} />
+          <Tab className='label' label="Carrinho" {...a11yProps(3)} />
+          <Tab className='label' label="Contatos" {...a11yProps(4)} />
+          <Tab className='label' label="Galeria" {...a11yProps(5)} />
+          <Tab className='label' label="Acessibilidade" {...a11yProps(6)} />
+          <Tab className='label' label="Aparencia" {...a11yProps(7)} />
         </Tabs>
         <TabPanel value={value} index={0}>
-
-        </TabPanel>
-        <TabPanel value={value} index={1}>
           <PerfilStatistic />
           <PerfilInfo />
         </TabPanel>
-        <TabPanel value={value} index={2}>
+        <TabPanel value={value} index={1}>
           <PerfilEndereco />
         </TabPanel>
-        <TabPanel value={value} index={3}>
+        <TabPanel value={value} index={2}>
           <PerfilRedes />
         </TabPanel>
+        <TabPanel value={value} index={3}>
+          <Carrinho />
+        </TabPanel>
         <TabPanel value={value} index={4}>
-          Item Five
+          <Contatos />
         </TabPanel>
         <TabPanel value={value} index={5}>
-          Item Six
+          <Galeria />
         </TabPanel>
         <TabPanel value={value} index={6}>
-          Item Seven
+          <Acessibilidade />
+        </TabPanel>
+        <TabPanel value={value} index={7}>
+          <Aparencia />
         </TabPanel>
       </Box>
+      aw
       <PerfilInfoSt>
       </PerfilInfoSt>
       <PerfilContenSt>

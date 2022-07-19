@@ -39,7 +39,7 @@ const Contact = () => {
           <AiFillCodepenCircle size='35'/><Button
           width='200px'
           type='button'
-          ><a target="_blank" rel="noreferrer" href='https://codepen.io/richardss'>Codepein</a></Button>
+          ><a target="_blank" rel="noreferrer" href='https://codepen.io/richardss/pens/public'>Codepein</a></Button>
         </ContactConteinerStyle>
         <Title fontSize='1rem' fontColor={props => props.theme.colors.text}>Email: richard_ss11@hotmail.com</Title>
       </ListLinkSt>
