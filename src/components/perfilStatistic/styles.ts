@@ -32,14 +32,15 @@ export const OptionsSt = Styled.ul`
   border: 1px solid black;
 `
 export const UserStatisticSt = Styled.div`
-  width: 100%;
+  width: fit-content;
   height: auto;
   display: flex;
   align-items: end;
   flex-wrap: wrap;
   justify-content: space-around;
   @media (max-width: 690px){
-    width: 80%;
+    
+    
   }
 
 `

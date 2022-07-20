@@ -11,6 +11,7 @@ import { Slider, Slide } from '../slider';
 import { BollsContainer } from '../bollsContainer'
 import { Button } from '../button'
 
+import { Plans } from '../homePlanCards'
 
 const settings = {
   spaceBetween: 50,
@@ -55,6 +56,7 @@ function Home() {
           <MainSlideImage5 />
         </Slide>
       </Slider>
+      <Plans />
       <PortFolder />
       <div className="home">
         <BollsContainer />

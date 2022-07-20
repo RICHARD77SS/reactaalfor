@@ -1,32 +1,14 @@
 import styled from 'styled-components';
 
 export const MenuItems = styled.div`
-  width: fit-content;
-  height: 400px;
+  width: 500px;
+  height: auto;
   border-radius: 10px;
   background-color: ${props => props.theme.colors.primary};
   position: absolute;
   z-index: 999;
   box-shadow: inset 0 0 1rem rgba(0,0,0,0.4);
-  transform: translateX(-10%);
-  @media (max-width: 1300px){
-    transform: translateX(-20%);
-  }
-  @media (max-width: 1200px){
-    transform: translateX(-30%);
-  }
-  @media (max-width: 1000px){
-    transform: translateX(-40%);
-  }
-  @media (max-width: 900px){
-    transform: translateX(-50%);
-  }
-  @media (max-width: 800px){
-    transform: translateX(-65%);
-  }
-  @media (max-width: 610px){
-    transform: translateX(-85%);
-  }
+  transform:  translateX(-81%);
 `;
 export const MenuIcon = styled.div`
   margin-top: 1rem;
