@@ -15,26 +15,7 @@ export const Plans: React.FC = () => (
       <Title fontSize='.7rem'>Até 12x de:</Title>
       <Title fontSize='1.5rem'>R$: 1.080</Title>
       <Title fontSize='.7rem'>Àvista R$: 10.800</Title>
-      
-      <Button>+Mais infos+</Button>
-    </PlanSt>
-    <PlanSt>
-      <Title fontSize='1rem'>Card</Title>
-      <Title fontSize='.7rem'>info mini desc littkle fotk card juan</Title>
-      <Title fontSize='1rem'>Card midght</Title>
-      <Title fontSize='.7rem'>Até 24x de:</Title>
-      <Title fontSize='1.5rem'>R$: 1.080</Title>
-      <Title fontSize='.7rem'>Àvista R$: 20.800</Title>
-      <Button>+Mais infos+</Button>
-    </PlanSt>
-    <PlanSt>
-      <Title fontSize='1rem'>Card</Title>
-      <Title fontSize='.7rem'>info mini desc littkle fotk card juan</Title>
-      <Title fontSize='1rem'>Card midght</Title>
-      <Title fontSize='.7rem'>Até 12x de:</Title>
-      <Title fontSize='1.5rem'>R$: 4.080</Title>
-      <Title fontSize='.7rem'>Àvista R$: 40.800</Title>
-      <Button>+Mais infos+</Button>
+      <Button>Mais infos</Button>
     </PlanSt>
   </PlansSt>
 )

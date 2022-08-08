@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { FolderItemStyle } from './styles'
 import { FolderTextDiv } from '../folder/styles'
 import { Title } from '../title'
@@ -11,40 +11,16 @@ const color3 = '#f5f5f5';
 
 
 export const FolderItem1 = () => {
-  const [folders, setFolders] = useState([]);
-  useEffect(() => {
-    fetch('./folders.json', {
-      headers: {
-        Accept: "application/json"
-      }
-    }).then(res => res.json())
-      .then(res => setFolders(res.data))
-  }, []);
+  
   return (
 
     <FolderItemStyle>
       <FolderTextDiv>
-        {folders.map((fdata, id) => {
-          return (
-            <div key={id}>
-              <Title>
-                {fdata.folder}
-              </Title>
-              <Title>
-                {fdata.title}
-              </Title>
-              <Title>
-                {fdata.desc}
-              </Title>
-            </div>
-          )
-        })}
-        <br />
+        <Title>
+          Html & Css Projects
+        </Title>
       </FolderTextDiv>
-      <Button
-        type='button'
-        width='80px'>More Infos
-      </Button>
+      <Button type='button' width='80px'> Ver Projetos </Button>
     </FolderItemStyle>
   )
 }

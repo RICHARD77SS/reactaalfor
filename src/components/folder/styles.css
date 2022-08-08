@@ -4,6 +4,7 @@
   background-position: center;
   background-size: cover;
   transition: all 0.5s;
+  background: #00fff0;
 }
 
 .swiper-slide {
@@ -13,8 +14,8 @@
   height: 300px;
   border-radius: 20px;
   transition: all 0.5s;
+  background: #ff00ff;
 }
-
 .swiper-slide img {
   transition: all 0.5s;
   display: block;

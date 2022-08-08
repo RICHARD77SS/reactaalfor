@@ -10,6 +10,7 @@ import "./styles.css"
 
 import { EffectCoverflow, Pagination } from "swiper";
 
+
 export default function Folder() {
   return (
     <>
@@ -36,8 +37,7 @@ export default function Folder() {
                 {Port1active()}
                 <FolderItem1 />
               </FolderStyle>
-              :
-              ''}
+              : ''}
             </>
           )}
         </SwiperSlide>
@@ -47,8 +47,8 @@ export default function Folder() {
               <FolderStyle>
                 {Port2active()}
                 <FolderItem2 />
-              </FolderStyle> :
-              ''}
+              </FolderStyle>
+              : ''}
             </>
           )}
         </SwiperSlide>
@@ -61,8 +61,7 @@ export default function Folder() {
                   {Port3active()}
                   <FolderItem3 />
                 </FolderStyle>
-                :
-                '' }
+                : '' }
             </>
           )}
         </SwiperSlide>
@@ -74,8 +73,7 @@ export default function Folder() {
                   {Port4active()}
                   <FolderItem4 />
                 </FolderStyle>
-                :
-                '' }
+                : '' }
             </>
           )}
         </SwiperSlide>

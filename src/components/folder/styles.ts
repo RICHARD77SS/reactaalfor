@@ -4,7 +4,7 @@ export const FolderStyle = styled.div`
     min-width: 250px;
     height: 300px;
     backdrop-filter: blur(18px) saturate(180%);
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(0, 255, 255, 0.3);
     border-radius: 20px;
     display: flex;
     flex-direction: column;

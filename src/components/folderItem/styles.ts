@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FolderItemStyle = styled.div`
-  min-width: 250px;
+  max-width: 300px;
   height: 300px;
   display: flex;
   flex-direction: column;

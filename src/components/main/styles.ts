@@ -7,6 +7,7 @@ export const MainConteinerStyle = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: ${props => props.theme.colors.secundary};
 `
 export const MainTextConteinerStyle = styled.div`
   width: 40%;

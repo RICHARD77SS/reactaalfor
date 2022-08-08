@@ -1,6 +1,7 @@
 import React from 'react';
 import {GiMagicPortal} from 'react-icons/gi';
 import { PortContentStyle } from './style';
+import { Title } from '../title';
 
 export const PortContent1 = (
 
@@ -8,8 +9,11 @@ export const PortContent1 = (
   return (
     <PortContentStyle>
       <div id='folder1-port' className='folderf-port folder1-port'>
-        html
         <GiMagicPortal size={50} />
+        <Title fontSize='2rem'>Css</Title>
+        <div className="content">
+          
+        </div>
       </div>
       <div id='folder2-port' className='folderf-port folder2-port'>
         HTML css2

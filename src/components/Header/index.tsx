@@ -6,7 +6,7 @@ import { shade } from 'polished';
 import { Container } from './styles';
 import Logo from '../logo'
 import { Search } from '../search'
-import SideList from '../sideList'
+import Menu from '../menu';
 interface Props {
   toggleTheme(): void;
 }
@@ -25,11 +25,13 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
         height={15}
         width={35}
         handleDiameter={20}
+        onHandleColor='#00ff00'
+        offHandleColor='#ff0000'
         offColor={shade(0.15, colors.text)}
         onColor={colors.primary}
       />
       <Search />
-      <SideList />
+      <Menu />
     </Container>
   );
 };

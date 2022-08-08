@@ -1,18 +1,19 @@
 import React from 'react';
-import { MainSlideImageStyle } from './styles';
+import { MainSlideImageStyle, Div, ConteinerImage } from './styles';
+
+import { Title } from '../title'
 
 export const MainSlideImage = () => {
   return (
-    <>
       <MainSlideImageStyle>
-        <div className='divi'>
-          <p>Iconss</p>
-        </div>
-        <div className='contimg'>
-          <img className="img" src="https://img.freepik.com/free-vector/gradient-colored-background-with-geometrical-shapes_23-2149112703.jpg?t=st=1655639095~exp=1655639695~hmac=f80939013798322f2415f1597e68bce54eb444e725b44a8b39bada3e0d857486&w=826" alt="" />
-        </div>
+        <Div>
+          <Title fontSize='1rem' >Gradiente generator</Title>
+          
+        </Div>
+        <ConteinerImage>
+          <img className="img" src="https://i.postimg.cc/762xxNmc/Screen-Shot-Tool-20220805111157.png" alt="" />
+        </ConteinerImage>
       </MainSlideImageStyle>
-    </>
   )
 }
 
@@ -21,7 +22,13 @@ export const MainSlideImage = () => {
 export const MainSlideImage2 = () => {
   return (
     <MainSlideImageStyle>
-      
+      <Div>
+        <Title fontSize='1rem' >LandingPage</Title>
+
+      </Div>
+      <ConteinerImage>
+        <img className="img" src="https://i.postimg.cc/Dz4n0fBm/landing.png" alt="" />
+      </ConteinerImage>
     </MainSlideImageStyle>
   )
 }
@@ -30,7 +37,7 @@ export const MainSlideImage2 = () => {
 export const MainSlideImage3 = () => {
   return (
     <MainSlideImageStyle>
-      <img className="img" src="https://img.freepik.com/free-vector/gradient-colored-background-with-geometrical-shapes_23-2149112703.jpg?t=st=1655639095~exp=1655639695~hmac=f80939013798322f2415f1597e68bce54eb444e725b44a8b39bada3e0d857486&w=826" alt="" />
+      <img className="img" src="https://i.postimg.cc/Dz4n0fBm/landing.png" alt="" />
     </MainSlideImageStyle>
   )
 }

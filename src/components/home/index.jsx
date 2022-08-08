@@ -4,12 +4,14 @@ import { FaGoogle } from 'react-icons/fa';
 import { Link } from 'react-router-dom'
 
 import { AuthGoogleContext } from "../../contexts/authGoogle";
-import { HomeConteinerStyle } from './styles';
+import { HomeConteinerStyle, LoginButton } from './styles';
+
 import { MainSlideImage, MainSlideImage2, MainSlideImage3, MainSlideImage4, MainSlideImage5 } from '../mainSlideImage';
 import PortFolder from '../portFolders';
 import { Slider, Slide } from '../slider';
 import { BollsContainer } from '../bollsContainer'
 import { Button } from '../button'
+import Main from '../main'
 
 import { Plans } from '../homePlanCards'
 
@@ -27,18 +29,14 @@ const settings = {
 function Home() {
   const { user, signOut } = useContext(AuthGoogleContext);
   let userLogado = JSON.parse(user);
-  if (!userLogado) {
-
-    userLogado = ' Faça Login'
-  } else {
-    userLogado = JSON.parse(user).displayName +" Click para Sair"
-  }
+  !userLogado ? userLogado = ' ' : userLogado = JSON.parse(user).displayName +" Click para Sair"
   return (
     <HomeConteinerStyle>
-      <div>
-        <Button width='120px' onClick={() => signOut()}><FaGoogle />  {userLogado} {userLogado.displayName}</Button>
-        <Button width='70px'><Link className='linkRd' to='/login'>Login</Link></Button>
-      </div>
+      <LoginButton>
+        <Button className="buttonSair" width='auto' onClick={() => signOut()}><FaGoogle />  {userLogado} {userLogado.displayName}</Button>
+        <Button className="buttonEntrar" width='70px'><Link className='linkRd' to='/login'>Login</Link></Button>
+      </LoginButton>
+      <Main />
       <Slider settings={settings} >
         <Slide>
           <MainSlideImage />

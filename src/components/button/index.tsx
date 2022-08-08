@@ -3,17 +3,19 @@ import React from 'react';
 import { ButtonStyle } from './styles'
 
 interface ButtonProps {
+  children?: React.ReactNode;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void; 
   width?: string;
   height?: string;
   border?: string;
   radius?: string;
-  children?: React.ReactNode;
-  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void; 
-  disabled?: boolean;
-  type?: "button" | "submit" | "reset";
+  padding?: string;
+  margin?: string;
   name?: string;
   value?: string;
+  type?: "button" | "submit" | "reset";
   background?: string;
+  disabled?: boolean;
 };
 
 export const Button = ({
@@ -22,12 +24,13 @@ export const Button = ({
   disabled,
   name,
   value,
-  type,
+  type='button',
   width,
-  height='30px',
+  height='2rem',
   border,
+  margin,
   radius = '10px',
-  background
+  padding='.5rem'
 }: ButtonProps) => {
   return (
     <ButtonStyle
@@ -35,12 +38,13 @@ export const Button = ({
       height={height}
       border={border}
       radius={radius}
+      margin={margin}
       value={value}
       name={name} 
       type={type}
       onClick={onClick}
       disabled={disabled}
-      background={background}
+      padding={padding}
     >
       {children}
     </ButtonStyle>

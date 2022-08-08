@@ -8,7 +8,6 @@ const Menu = () => {
   const ToggleMode = () => {
     setMode(!active);
   };
-
   return (
     <MenuIcon>
       <div className={active ? 'icon iconActive' : 'icon'} onClick={ToggleMode}>
